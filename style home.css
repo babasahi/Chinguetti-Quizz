@@ -6,15 +6,46 @@ body{
  
    
 }
-i{
+
+header{
+    background-color: #00002a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+}
+.logo {
     color: yellow;
     font-size: 35px;
     background-color: green;
     border: 2px solid red;
     border-radius: 10px;
     
-    
 }
+
+header ul{
+    list-style: none;
+}
+header ul li {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 0 10px; 
+    border-bottom: 2px solid #fff;
+}
+
+header ul li a {
+    font-size: 1.1em;
+    color: green;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 2px;
+    transition: .3s;
+}
+
+header ul li a:hover{
+    color: rgba(255,255,255, .5)
+}
+
 p{
     
     font-size: 17px;
