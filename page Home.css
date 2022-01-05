@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
 html {
   box-sizing: border-box;
   font-family: "Akaya Telivigala", cursive;
   height: 1000px;
   scroll-behavior: smooth;
+  font-family: "Josefin Sans", Arial;
 }
 body {
   margin: 0;
