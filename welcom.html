@@ -1,193 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
-
-:root{
-  --primary: #FF4C29;
-}
-
-::selection{
-  background: var(--primary);
-}
-
-*{
-  margin: 0;
-  padding: 0;
-  outline: none;
-  box-sizing: border-box;
-  line-height: 1.5;
-  transition: all .3s ease-in-out;
-  font-family: "Josefin Sans", Arial;
-}
-
-body{
-  background: #fff;
-  
-}
-
-body::before{
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  content: "";
-  position: absolute;
- background: url(./assets/images/90.jpg) no-repeat;
- background-color: #000;
-}
-
-header{
-    background-color:#00002a;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 20px;
-}
-.logo {
-    border: 2px solid red;
-    border-radius: 5px;
-    padding: 5px 10px;
-    color: yellow;
-    font-size: 1.5em;
-    font-weight: 400;
-    margin-left: 50px;
-    font-family: 'Tajawal', sans-serif;
-    letter-spacing: 2px;
-    cursor: pointer;
-}
-
-ul{
-    list-style: none;
-}
-ul li {
-    display: inline-block;
-    padding: 5px 10px;
-    margin: 0 10px; 
-    border-bottom: 2px solid #fff;
-}
-
-ul li a {
-    font-size: 1.1em;
-    color:green;
-    text-decoration: none;
-    font-weight: 500;
-    letter-spacing: 2px;
-    transition: .3s;
-}
-
-ul li a:hover{
-        color: red;
-        text-decoration: underline;
-        font-weight: bold;
-}
-
-
-
-.btn{
-  padding: 0.5rem 2rem;
-  outline: none;
-  border: none;
-  background: #fff;
-  color: var(--primary);
-  margin: 0 1rem;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.btn-secondary{
-  background: var(--primary) !important;
-  color: #fff !important;
-}
-
-.btn-secondary:hover{
-  background: #eee !important;
-  color: var(--primary) !important;
-}
-
-.btn:hover{
-  background: var(--primary);
-  color: #fff;
-}
-
-.banner{
-  display: flex;
-  margin-top: 2rem;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-left: 500px;
-}
-
-.banner .left{
-  width: 380px;
-}
-
-.banner .left h1{
-  text-transform: capitalize;
-  font-size: 2em;
-  color: #fff;
-}
-
-.banner .left h1 span{
-  color: var(--primary);
-  border-bottom: 3px solid var(--primary);
-}
-
-.banner .left .buttons{
-  margin: 2rem 0;
-}
-
-.banner .left .buttons .btn{
-  margin: 0;
-}
-
-.banner .left .buttons .btn:nth-child(2){
-  margin: 0 1rem;
-}
-
-.banner .left p{
-  color: #999;
-  font-size: 14px;
-}
-
-.banner .right{
-  width: 380px;
-}
-
-
-
-
-    </style>
+  <meta charset="utf-8">
+  <title>particles.js</title>
+  <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
+  <meta name="author" content="Vincent Garreau" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" media="screen" href="css/style.css">
 </head>
 <body>
-    <header>
+  <header>
         
-            <div class="logo">شنقيط</div>
-            <nav>
-               <ul>
-                   <li><a href="./page Home.html">home</a></li>
-                   <li><a href="quizz page.html">Quiz</a></li>
-                   <li><a href="about page.html">About Us</a></li>
-               </ul>
-            </nav>
-      
-      </header>
-      <br/> <br/> <br/>
-      <section class="banner">
-        <div class="left">
-          <h1>Welcome your website here you find everything with <span>Mauritania</span></h1>
-          <div class="buttons">
-            <a  href="./page Home.html" target="_blank"><button class="btn btn-secondary">Home Page</button></a>
-            <a  href="./quizz page.html" target="_blank"><button class="btn btn-secondary">Start Quiz</button></a>
-          </div>
-         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ornare ligula et purus gravida, sed euismod tortor pharetra. Cras vitae faucibus mauris. Ut velit nibh, vulputate sit amet ultrices eget.</p>
-        </div> 
+    <div class="logo">شنقيط</div>
+    <nav>
+       <ul>
+           <li><a href="./page Home.html">home</a></li>
+           <li><a href="quizz page.html">Quiz</a></li>
+           <li><a href="about page.html">About Us</a></li>
+       </ul>
+    </nav>
+
+</header>
+<br/> <br/> <br/>
+<section class="banner">
+<div class="left">
+  <h1>Welcome your website here you find everything with <span>Mauritania</span></h1>
+  <div class="buttons">
+    <a  href="./page Home.html" target="_blank"><button class="btn btn-secondary">Home Page</button></a>
+    <a  href="./quizz page.html" target="_blank"><button class="btn btn-secondary">Start Quiz</button></a>
+  </div>
+ <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ornare ligula et purus gravida, sed euismod tortor pharetra. Cras vitae faucibus mauris. Ut velit nibh, vulputate sit amet ultrices eget.</p>
+</div> 
+
+<!-- particles.js container -->
+<div id="particles-js"></div>
+
+<!-- scripts -->
+<script src="../particles.js"></script>
+<script src="js/app.js"></script>
+
 </body>
 </html>
