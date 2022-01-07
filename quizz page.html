@@ -12,7 +12,7 @@
 *{
     padding: 0;
     margin:0;
-    font-family: "Josefin Sans", Arial;
+    font-family: 'Roboto', sans-serif;
 }
 body{
     background-image: url(./assets/images/4.jpg);
@@ -206,6 +206,49 @@ button.passbtn:hover {
 }
 
 
+form1{
+	padding: 20px 0;
+	margin-left: 10px;
+
+  }
+	form1,input{
+		display: block;
+		appearance: none;
+		outline: 0;
+		border: 1px solid fade(white, 40%);
+		background-color: fade(white, 20%);
+		width: 217px;	
+		border-radius: 3px;
+		padding: 10px 15px;
+		margin-left: 10px;
+		display: block;
+		text-align: center;
+		font-size: 18px;
+		color: black;
+		transition-duration: 0.25s;
+		font-weight: 300;
+	
+	}
+	
+	button{
+		appearance: none;
+		outline: 0;
+		background-color: #fff;
+		border: 0;
+		padding: 10px 15px;
+		border-radius: 3px;
+    margin-left: 10px;
+		width: 250px;
+		cursor: pointer;
+		font-size: 18px;
+		transition-duration: 0.25s;
+	
+	}
+
+
+
+
+
 
     </style>
 </head>
@@ -223,6 +266,25 @@ button.passbtn:hover {
             </header>
             <section>
                 <br/> <br/>
+                    <form class="form1">
+                      <input type="text" placeholder="Username">
+                      <input type="password" placeholder="Password">
+                      <button type="submit" id="login-button">Login</button>
+                    </form>
+                  
+                  <ul class="bg-bubbles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                </div>
                 <center>
     <h2 class="quizHeader">Take a Quiz!</h2>
     <br/>
