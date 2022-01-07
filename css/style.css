@@ -19,11 +19,6 @@
 }
 
 body{
-  background: #fff;
-  
-}
-
-body::before{
   width: 100%;
   height: 100%;
   top: 0;
@@ -31,9 +26,12 @@ body::before{
   z-index: -1;
   content: "";
   position: absolute;
- background: url(../assets/images/90.jpg) no-repeat;
- background-color: #000;
+  background: url(../assets/images/90.jpg) no-repeat;
+  background-color: black;
+  
 }
+
+
 
 header{
   background-color:#00002a;
@@ -118,7 +116,7 @@ margin-left: 500px;
 }
 
 .banner .left{
-width: 380px;
+width: 90%;
 }
 
 .banner .left h1{
@@ -156,8 +154,8 @@ width: 380px;
 /* ---- particles.js container ---- */
 
 #particles-js{
-  width: 50%;
-  height: 10%;
+  width: 90%;
+  height: 50%;
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
