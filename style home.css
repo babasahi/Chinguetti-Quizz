@@ -1,18 +1,24 @@
 body{
-    background-image: url(https://media.istockphoto.com/photos/flag-of-mauritania-ink-splat-on-black-background-picture-id1332450718?k=20&m=1332450718&s=612x612&w=0&h=Ki0Jv0URt0hPkP6qhsyeqo_y0cPVwxJo_jPIViI7Pp0=);
+    background-image: url(https://media.istockphoto.com/photos/flag-of-mauritania-ink-splat-on-white-background-picture-id1334415586?b=1&k=20&m=1334415586&s=170667a&w=0&h=_Ss78hE-rKFyIzqvku6hWtFcgAw-4hMbosvhYutpvGg=);
     background-position-x: center;
-    background-repeat: no-repeat;
-    background-color: black;
+    background-position-y: top;
+   background-repeat: no-repeat;
+    background-color: white;
  
    
 }
+*{
+    padding: 0;
+    margin: 0;
+}
 
 header{
-    background-color: #00002a;
+    background-color: #041C32;
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 20px;
+    padding: 0 20px;
 }
 .logo {
     color: yellow;
@@ -35,7 +41,7 @@ header ul li {
 
 header ul li a {
     font-size: 1.1em;
-    color: green;
+    color: white;
     text-decoration: none;
     font-weight: 500;
     letter-spacing: 2px;
@@ -48,48 +54,38 @@ header ul li a:hover{
     font-weight: bold;
 }
 
-p{
-    
-    font-size: 17px;
-    background-image: url("2.png");
-    background-size: 100px 100px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: green;
-    font-family: cursive;
-    color: black;
-    font-weight: bolder;
-    text-align: center;
-    
 
-}
-p:hover{
-    color: red;
-
-}
-strong{
- border: 10px yellow solid;
- margin: 200px 100px 0px 500px;
- padding: 40px;
- background-image: url(https://media.istockphoto.com/photos/mauritanian-tee-picture-id1273469360?k=20&m=1273469360&s=612x612&w=0&h=xh_MyRJD01btp1HYkzbt0g9JRgZkVuqXP7qyrerHaxA=);
- 
- background-position: center;
-background-repeat: no-repeat;
-
-
-}
-input{
- 
- border: 2px green solid;
- margin: 350px 0px 0px 600px;
-}
 b{
     background-color: white;
+    font-family: 'Courier New', Courier, monospace;
 }
-section ul li:hover{
 
-background-image: url(https://media.istockphoto.com/photos/mauritanian-tee-picture-id1273469360?k=20&m=1273469360&s=612x612&w=0&h=xh_MyRJD01btp1HYkzbt0g9JRgZkVuqXP7qyrerHaxA=);
-background-repeat: no-repeat;
-background-position-y: bottom;
-background-position-x: bottom;
+.traditions p{
+    margin: 50px;
+    font-style: normal;
+   
+   
+}
+.Economie p{
+    margin: 50px;
+    font-style: normal;
+    
+}
+.his p{
+    margin: 50px;
+    font-style: normal;
+   
+}
+.ad{
+    margin: 50px;;
+    font-style: normal;
+   
+}
+.traditions img{
+    margin: 10px;
+}
+.social p{
+    margin: 50px;
+    font-style: normal;
+    
 }
