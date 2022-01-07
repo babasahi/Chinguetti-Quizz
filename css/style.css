@@ -31,7 +31,7 @@ body::before{
   z-index: -1;
   content: "";
   position: absolute;
- background: url(./90.jpg) no-repeat;
+ background: url(../assets/images/90.jpg) no-repeat;
  background-color: #000;
 }
 
