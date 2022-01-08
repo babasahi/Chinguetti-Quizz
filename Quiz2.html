@@ -8,13 +8,22 @@
 
     <script>
 let input = document.getElementsByTagName('input');
+const valider = document.getElementById('valider');
 const corriger = document.getElementById('corriger');
 const reprendre = document.getElementById('reprendre');
-const back = document.getElementById('back-step5');
 const form = document.getElementById('form');
+const clear = document.getElementById('clear');
+
 let compteur = 0;
 let score=0;
 
+clear.onclick = resett;
+function resett(){
+    for (let i = 0;i<Q7.length;i++)
+    {
+        if(Q7[i].checked) Q7[i].checked = false;
+    }
+}
 
 reprendre.onclick = reload;
 function reload()
@@ -46,14 +55,19 @@ function displaybuttons(){
     reprendre.style.display = "";
     corriger.style.display = "";
     valider.disabled = true;
-    back.disabled=true;
-    
 }
-       let Q=document. getElementsByName('Q1');
+       let Q=document.getElementsByName('Q1');
        let Q1=document.getElementsByName('Q2');
        let Q2=document.getElementsByName('Q3');
        let Q3=document.getElementsByName('Q4');
-       let Q4=document.getElementsByClassName('Q8');
+       let Q4=document.getElementsByName('Q5');
+       let Q5=document.getElementsByName('Q6');
+       let Q6=document.getElementsByName('Q7');
+       let Q7=document.getElementsByClassName('Q8');
+       let Q8=document.getElementsByName('Q9');
+       let Q9=document.getElementsByName('Q10');
+       let Q10=document.getElementsByName('Q11');
+       let Q11=document.getElementsByName('Q12');
 
 let questions = [ 
     {
@@ -62,7 +76,7 @@ let questions = [
     },
     {
         "choix" : Q1,
-        "reponse" : ""
+        "reponse": 0
     },
     {
         "choix" : Q2,
@@ -73,13 +87,44 @@ let questions = [
         "reponse" : 2
     },
     {
-      "choix" : Q4,
-      "reponse" : [0,2]
+        "choix" : Q4,
+        "reponse" : ""
+    },
+    {
+        "choix" : Q5,
+        "reponse" : 1
+    },
+    {
+        "choix" : Q6,
+        "reponse" : 0
+    },
+    {
+        "choix" : Q7,
+        "reponse" : [0,2]
+    },
+    {
+        "choix" : Q8,
+        "reponse" : 1
+    },
+    {
+        "choix" : Q9,
+        "reponse" : 1
+    },
+    {
+        "choix" : Q10,
+        "reponse" : 1
+    },
+    {
+        "choix" : Q11,
+        "reponse" : 1
     }
-   
+
+    
+
 ];
 
 
+valider.onclick = result;
 function result(){
 for ( let i= 0 ;i<input.length;i++)
 {
@@ -90,16 +135,16 @@ for ( let i= 0 ;i<input.length;i++)
    
     
 }
-if(compteur == 15)
+if(compteur == 36)
 {       let answer;
     do
-    answer = prompt("Quelle question n'a aucune reponse",'entre 1 et 5, exemple : 2');
-     while(isNaN(answer) || ( answer > 5) || (answer < 1));
-    if(answer == 2) {score+=2;
-        alert("DOMMAGE , VOTRE SCORE EST  : "+score + "\nVOUS NE CONNAISSEZ PAS RIM !");
+    answer = prompt("Quelle question n'a aucune reponse",'entre 1 et 10 , exemple : 2');
+     while(isNaN(answer) || ( answer > 10) || (answer < 1));
+    if(answer == 5) {score+=2;
+        alert("DOMMAGE , VOTRE SCORE EST  : "+score + "\nVOUS NE CONNAISSEZ PAS L'HTML !");
      }
      else {
-        alert("DOMMAGE , VOTRE SCORE EST  : "+score + "\nVOUS NE CONNAISSEZ PAS RIM !");
+        alert("DOMMAGE , VOTRE SCORE EST  : "+score + "\nVOUS NE CONNAISSEZ PAS L'HTML !");
      }
      displaybuttons();
      return ;
@@ -122,8 +167,8 @@ for(i=0;i<questions.length;i++)
     for( let j=0;j<3;j++)
     {
 
-        //Question 5
-        if (i==4)
+        //Question 8
+        if (i==7)
         { 
            for(let k=0;k<3;k++)
            {
@@ -151,8 +196,8 @@ for(i=0;i<questions.length;i++)
 
 
 
-            //Question 2
-       else if(i==1)
+            //Question 5
+       else if(i==4)
         {
             if(choix[j].checked)
             {
@@ -192,18 +237,19 @@ else {
 
            
      
-           if(8<=score)
-           {alert("TRES BONNE CONNAISSANCE DU RIM \n SCORE : "+score);}
-           else if(12<=score && score<8)
-           {alert("BONNE CONNAISSANCE DU  RIM \n SCORE : "+score);}
-          else if(8<=score && score<6)
-           {alert("CONNAISSANCE MOYENNE DU  RIM  \n SCORE : "+score);}
+           if(18<=score)
+           {alert("TRES BONNE CONNAISSANCE DU HTML \n SCORE : "+score);}
+           else if(12<=score && score<18)
+           {alert("BONNE CONNAISSANCE DU HTML \n SCORE : "+score);}
+          else if(8<=score && score<12)
+           {alert("CONNAISSANCE MOYENNE DU HTML \n SCORE : "+score);}
            else
-           {alert("VOUS NE CONNAISSEZ PAS LE  RIM  \n SCORE : "+score);}
+           {alert("VOUS NE CONNAISSEZ PAS LE HTML \n SCORE : "+score);}
            displaybuttons();
            
         
-  }
+  }  
+  
 
     </script>
     <style>
@@ -531,7 +577,7 @@ button.corigbtn:hover {
           </label>
           </div>
         </div>
-        <button class="validebtn" type="button" id="valider" onclick="result()">Valider</button>
+        <button class="validebtn" type="button" id="valider">Valider</button>
         <a  href="reponse.html" target="_blank"><button class="corigbtn" type="button" id="corriger" style="display: none;">Corriger</button> </a>
         <button class="startbtn" type="button"  id="reprendre" style="display: none;" >Reprendre</button>
       </div>
