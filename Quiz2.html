@@ -7,8 +7,9 @@
     <title>Document</title>
 
     <script>
+      
 let input = document.getElementsByTagName('input');
-const valider = document.getElementById('valider');
+const valider = document.getElementsByClassName('validebtn')
 const corriger = document.getElementById('corriger');
 const reprendre = document.getElementById('reprendre');
 const form = document.getElementById('form');
@@ -61,13 +62,8 @@ function displaybuttons(){
        let Q2=document.getElementsByName('Q3');
        let Q3=document.getElementsByName('Q4');
        let Q4=document.getElementsByName('Q5');
-       let Q5=document.getElementsByName('Q6');
-       let Q6=document.getElementsByName('Q7');
-       let Q7=document.getElementsByClassName('Q8');
-       let Q8=document.getElementsByName('Q9');
-       let Q9=document.getElementsByName('Q10');
-       let Q10=document.getElementsByName('Q11');
-       let Q11=document.getElementsByName('Q12');
+       let Q5=document.getElementsByClassName('Q8');
+
 
 let questions = [ 
     {
@@ -92,34 +88,8 @@ let questions = [
     },
     {
         "choix" : Q5,
-        "reponse" : 1
-    },
-    {
-        "choix" : Q6,
-        "reponse" : 0
-    },
-    {
-        "choix" : Q7,
         "reponse" : [0,2]
-    },
-    {
-        "choix" : Q8,
-        "reponse" : 1
-    },
-    {
-        "choix" : Q9,
-        "reponse" : 1
-    },
-    {
-        "choix" : Q10,
-        "reponse" : 1
-    },
-    {
-        "choix" : Q11,
-        "reponse" : 1
     }
-
-    
 
 ];
 
@@ -135,12 +105,12 @@ for ( let i= 0 ;i<input.length;i++)
    
     
 }
-if(compteur == 36)
+if(compteur == 15)
 {       let answer;
     do
     answer = prompt("Quelle question n'a aucune reponse",'entre 1 et 10 , exemple : 2');
-     while(isNaN(answer) || ( answer > 10) || (answer < 1));
-    if(answer == 5) {score+=2;
+     while(isNaN(answer) || ( answer > 5) || (answer < 1));
+    if(answer == 2) {score+=2;
         alert("DOMMAGE , VOTRE SCORE EST  : "+score + "\nVOUS NE CONNAISSEZ PAS L'HTML !");
      }
      else {
@@ -167,8 +137,8 @@ for(i=0;i<questions.length;i++)
     for( let j=0;j<3;j++)
     {
 
-        //Question 8
-        if (i==7)
+        //Question 5
+        if (i==4)
         { 
            for(let k=0;k<3;k++)
            {
@@ -187,17 +157,13 @@ for(i=0;i<questions.length;i++)
             break;
        
         
-               
-           
-           
-
-
+              
     }
 
 
 
-            //Question 5
-       else if(i==4)
+            //Question 2
+       else if(i==1)
         {
             if(choix[j].checked)
             {
