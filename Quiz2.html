@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+  text-align: center;
+  background-color: yellow;
+}
+.form-container {
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+label{
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  margin: 2px;
+  vertical-align: middle;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+}
+
+
+  .panel {
+    background: rgba(0,0,0,.2);
+
+    }
+    .panel-heading {
+      margin-bottom: 20px;
+    }
+  
+  .btn-group {
+    width: 90%;
+    margin: 0 auto 10px auto;
+  }
+  .back {
+    float: left;
+    border: 0;
+    padding: 20px;
+    width: 20%;
+    border-radius: 50px;
+    background: #e40046;
+    color: #fff;
+    font-size: 1rem;
+    margin: 7px 3px;
+    cursor: pointer;
+    outline: none;
+    margin-bottom: 10px;
+    transition: background 0.3s ease-in-out;
+    box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.3);
+  }
+
+.continue {
+  float: right;
+  border: 0;
+  padding: 20px;
+  width: 20%;
+  border-radius: 50px;
+  background: #e40046;
+  color: #fff;
+  font-size: 1rem;
+  margin: 7px 3px;
+  cursor: pointer;
+  outline: none;
+  margin-bottom: 10px;
+  transition: background 0.3s ease-in-out;
+  box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Multi-Part CSS */
+input[type=checkbox] {
+  position: absolute;
+  /* Position the checkbox in upper left corner */
+  opacity: 0;
+}
+
+/* Styling Parts */
+#part1,
+#part2,
+#part3 {
+  z-index: 2;
+  display: block;
+  height: auto;
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+/* Hidden Parts */
+#part2,
+#part3 {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+/* Show Step 2 & Hide Step 1 */
+#step2:checked ~ #part2 {
+  opacity: 1;
+  height: auto;
+}
+#step2:checked ~ #part1 {
+  opacity: 0;
+  height: 0;
+  display: none;
+}
+
+/* Show Step 3  & Hide Step 2 */
+#step3:checked ~ #part3 {
+  opacity: 1;
+  height: auto;
+}
+#step3:checked ~ #part2 {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+button.validebtn{
+  float: right;
+  border: 0;
+  padding: 20px;
+  width: 25%;
+  border-radius: 50px;
+  background: green;
+  color: #fff;
+  font-size: 1rem;
+  margin: 7px 3px;
+  cursor: pointer;
+  outline: none;
+  margin-bottom: 10px;
+  transition: background 0.3s ease-in-out;
+  box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.3);
+ 
+}
+button.validebtn:hover {
+  background:#5f84fe;
+}
+button.startbtn,
+button.corigbtn{
+  margin-left: 70px;
+  border: 0;
+  padding: 20px;
+  width: 25%;
+  border-radius: 50px;
+  background: green;
+  color: #fff;
+  font-size: 1rem;
+  margin: 7px 3px;
+  cursor: pointer;
+  outline: none;
+  margin-bottom: 10px;
+  transition: background 0.3s ease-in-out;
+  box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.3);
+}
+button.startbtn{
+    margin-left: 40px;
+    margin-top:30px;
+}
+
+button.startbtn:hover,
+button.corigbtn:hover {
+  background:#5f84fe;
+}
+
+
+   </style>
+</head>
+<body>
+    <h1 class="page-header">Multi-Step Form with CSS Only</h1>
+<div class="form-container">
+  <form action="" role="form">
+    <input id='step2' type='checkbox'>
+    <input id='step3' type='checkbox'>
+
+    <div id="part1" class="form-group">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title">Part 1</h3>
+        </div>
+        <img src="./4.jpg" alt="mm" width="600px" height="400px">
+        <br/><br/><br/>
+        <input type="radio" name="Q1" class="Q8"  value="home_MARKEUP_LANGUAGE" id="home_MARKEUP_LANGUAGE">
+        <label for="home_MARKEUP_LANGUAGE"><div></div></label> Home Tool Markup Language<br/>
+        <input type="radio" name="Q1" class="Q8"  value="hyperlinks" id="hyperlinks">
+        <label for="hyperlinks"><div></div></label>Hyperlinks and Text Markup Language<br/>
+        <input type="radio" name="Q1" class="Q8"  value="hyper_text" id="hyper_text">
+        <label for="hyper_text"><div></div></label>Hyper Text Markup Language<br/><br/>
+        <div class="btn-group btn-group-lg" role="group" aria-label="...">
+          <label for='step2' id="continue-step2" class="continue">
+          <div class="btn btn-default btn-success btn-lg">Continue</div>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div id="part2" class="form-group">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title">Part 2</h3>
+        </div>
+        <img src="./4.jpg" alt="mm" width="600px" height="400px">
+        <br/><br/>
+        <input type="radio" name="Q2" class="Q8"  value="balisage" id="balisage">
+        <label for="balisage"><div></div></label>Langage de balisage<br/>
+        <input type="radio" name="Q2" class="Q8"  value="haut_nv" id="haut_nv">
+        <label for="haut_nv"><div></div></label>Langage de haut niveau<br/>
+        <input type="radio" name="Q2" class="Q8"  value="lp" id="lp">
+        <label for="lp"><div></div></label>Langage de programmation<br/><br/>
+        <div class="btn-group btn-group-lg btn-group-justified" role="group" aria-label="...">
+
+          <label for='step2' id="back-step2" class="back">
+            <div class="btn btn-default btn-primary btn-lg" role="button">Back</div>
+          </label>
+          <label for='step3' id="continue-step3" class="continue">
+            <div class="btn btn-default btn-success btn-lg" role="button">Continue</div>
+          </label>
+
+        </div>
+      </div>
+    </div>
+
+    <div id="part3" class="form-group">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title">Part 3</h3>
+        </div>
+        <img src="./4.jpg" alt="mm" width="600px" height="400px">
+        <br/><br/>
+        <input type="radio" name="Q3" class="Q8"  value="utilisateur" id="utilisateur">
+        <label for="utilisateur"><div></div></label>Balises définis par l’utilisateur<br/>
+        <input type="radio" name="Q3" class="Q8"  value="predefinis" id="predefinis">
+        <label for="predefinis"><div></div></label>Balises prédéfinis<br/>
+        <input type="radio" name="Q3" class="Q8"  value="fixes_définis_par_langage" id="fixes_définis_par_langage">
+        <label for="fixes_définis_par_langage"><div></div></label>Balises fixes définis par le langage<br/><br/>
+        <div class="btn-group btn-group-lg" role="group" aria-label="...">
+            <br/>
+          <label for='step3' id="back-step3" class="back">
+            <div class="btn btn-default btn-primary btn-lg">Back</div>
+          </label>
+          </div>
+        </div>
+        <button class="validebtn" type="button" id="valider">Valider</button>
+        <a  href="reponse.html" target="_blank"><button class="corigbtn" type="button" id="corriger">Corriger</button> </a>
+        <button class="startbtn" type="button"  id="reprendre" >Reprendre</button>
+      </div>
+    </div>
+  </form>
+</div>
+</body>
+</html>
