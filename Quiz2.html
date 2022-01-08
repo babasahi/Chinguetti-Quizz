@@ -5,6 +5,218 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <script>
+let input = document.getElementsByTagName('input');
+const valider = document.getElementById('valider');
+const corriger = document.getElementById('corriger');
+const reprendre = document.getElementById('reprendre');
+const form = document.getElementById('form');
+const clear = document.getElementById('clear');
+
+let compteur = 0;
+let score=0;
+
+clear.onclick = resett;
+function resett(){
+    for (let i = 0;i<Q7.length;i++)
+    {
+        if(Q7[i].checked) Q7[i].checked = false;
+    }
+}
+
+reprendre.onclick = reload;
+function reload()
+{
+    location.reload();
+return false;
+}
+
+
+form.onsubmit = unload;
+function unload(event){
+    event.preventDefault();
+
+}
+
+
+
+corriger.onclick = deactivate;
+
+function deactivate(){
+    corriger.disabled = true;
+}
+
+
+
+
+function displaybuttons(){
+
+    reprendre.style.display = "";
+    corriger.style.display = "";
+    valider.disabled = true;
+}
+       let Q=document.getElementsByName('Q1');
+       let Q1=document.getElementsByName('Q2');
+       let Q2=document.getElementsByName('Q3');
+       let Q3=document.getElementsByName('Q4');
+       let Q7=document.getElementsByClassName('Q5');
+
+let questions = [ 
+    {
+        "choix" : Q,
+        "reponse" : 2
+    },
+    {
+        "choix" : Q1,
+        "reponse": 0
+    },
+    {
+        "choix" : Q2,
+        "reponse" : 2
+    },
+    {
+        "choix" : Q3,
+        "reponse" : 2
+    },
+    {
+        "choix" : Q4,
+        "reponse" : ""
+    },
+    {
+        "choix" : Q5,
+        "reponse" : 1
+    }
+];
+
+
+valider.onclick = result;
+function result(){
+for ( let i= 0 ;i<input.length;i++)
+{
+    if(input[i].type == 'radio' && !input[i].checked)
+    {   compteur++;
+
+    }
+   
+    
+}
+if(compteur == 15)
+{       let answer;
+    do
+    answer = prompt("Quelle question n'a aucune reponse",'entre 1 et 5, exemple : 2');
+     while(isNaN(answer) || ( answer > 5) || (answer < 1));
+    if(answer == 3) {score+=2;
+        alert("DOMMAGE , VOTRE SCORE EST  : "+score + "\nVOUS NE CONNAISSEZ PAS RIM !");
+     }
+     else {
+        alert("DOMMAGE , VOTRE SCORE EST  : "+score + "\nVOUS NE CONNAISSEZ PAS RIM !");
+     }
+     displaybuttons();
+     return ;
+}
+
+score=0;
+
+       
+for(i=0;i<questions.length;i++)
+{
+
+    let choix = questions[i].choix;
+
+    let reponse = questions[i].reponse;
+    let juste = 0;
+    let nonchecked = 0;
+    let check = 0;
+    let compteurcheck = 0;
+
+    for( let j=0;j<3;j++)
+    {
+
+        //Question 8
+        if (i==7)
+        { 
+           for(let k=0;k<3;k++)
+           {
+            if (choix[k].checked)
+            {
+                compteurcheck++;
+            }
+           }
+           if(compteurcheck == 2 && !choix[1].checked) {
+               score+=2; break; }
+               else if (compteurcheck == 0)
+               {
+                   break;
+               }
+            else score+=-1;
+            break;
+       
+        
+               
+           
+           
+
+
+    }
+
+
+
+            //Question 5
+       else if(i==4)
+        {
+            if(choix[j].checked)
+            {
+                score+=-1;
+                break;
+            }
+            else {
+                nonchecked ++;
+            }
+
+            if (nonchecked == 3 && j==2)
+            {
+                score+=2;
+                break;
+            }
+        }
+       
+
+       
+
+        //Les autres questions
+else {
+
+
+       if (choix[j].checked )
+       {
+           if( j == reponse) 
+           score+=2;
+           else {
+               score+=-1;
+           }
+       }
+       else score+=0;
+    }
+}
+}
+
+           
+     
+           if(18<=score)
+           {alert("TRES BONNE CONNAISSANCE DU RIM \n SCORE : "+score);}
+           else if(12<=score && score<18)
+           {alert("BONNE CONNAISSANCE DU  RIM \n SCORE : "+score);}
+          else if(8<=score && score<12)
+           {alert("CONNAISSANCE MOYENNE DU  RIM  \n SCORE : "+score);}
+           else
+           {alert("VOUS NE CONNAISSEZ PAS LE  RIM  \n SCORE : "+score);}
+           displaybuttons();
+           
+        
+  }
+
+    </script>
     <style>
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@300&family=Poppins:ital,wght@1,200&family=Roboto:ital,wght@0,100;1,300&family=Tajawal:wght@500&display=swap');
   body {
@@ -319,9 +531,9 @@ button.corigbtn:hover {
         <br/><br/>
         <input type="radio" name="Q5" class="Q8"  value="HTML5" id="HTML5">
         <label for="HTML5"><div></div></label>!DOCTYPE html5<br/>
-        <input type="radio" name="Q5" class="Q8"  value="HTML" id="HTML">
+        <input type="radio" name="Q51" class="Q8"  value="HTML" id="HTML">
         <label for="HTML"><div></div></label>!DOCTYPE html<br/>
-        <input type="radio" name="Q5" class="Q8"  value="HTML_PUBLIC" id="HTML_PUBLIC">
+        <input type="radio" name="Q52" class="Q8"  value="HTML_PUBLIC" id="HTML_PUBLIC">
         <label for="HTML_PUBLIC"><div></div></label>!DOCTYPE html PUBLIC "-//W3C//DTD HTML5.0 Strict//EN"<br/><br/>
         <div class="btn-group btn-group-lg" role="group" aria-label="...">
             <br/>
