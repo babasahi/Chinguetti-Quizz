@@ -11,8 +11,8 @@ let input = document.getElementsByTagName('input');
 const valider = document.getElementById('valider');
 const corriger = document.getElementById('corriger');
 const reprendre = document.getElementById('reprendre');
+const back = document.getElementById('back-step5');
 const form = document.getElementById('form');
-
 let compteur = 0;
 let score=0;
 
@@ -47,6 +47,7 @@ function displaybuttons(){
     reprendre.style.display = "";
     corriger.style.display = "";
     valider.disabled = true;
+    back.disabled=true;
     
 }
        let Q=document.getElementsByName('Q1');
