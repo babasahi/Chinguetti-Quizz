@@ -9,11 +9,9 @@
     <script>
       
 let input = document.getElementsByTagName('input');
-const valider = document.getElementsByClassName('validebtn')
 const corriger = document.getElementById('corriger');
 const reprendre = document.getElementById('reprendre');
 const form = document.getElementById('form');
-const clear = document.getElementById('clear');
 
 let compteur = 0;
 let score=0;
@@ -94,7 +92,7 @@ let questions = [
 ];
 
 
-valider.onclick = result;
+
 function result(){
 for ( let i= 0 ;i<input.length;i++)
 {
