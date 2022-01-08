@@ -12,18 +12,10 @@ const valider = document.getElementById('valider');
 const corriger = document.getElementById('corriger');
 const reprendre = document.getElementById('reprendre');
 const form = document.getElementById('form');
-const clear = document.getElementById('clear');
 
 let compteur = 0;
 let score=0;
 
-clear.onclick = resett;
-function resett(){
-    for (let i = 0;i<Q7.length;i++)
-    {
-        if(Q7[i].checked) Q7[i].checked = false;
-    }
-}
 
 reprendre.onclick = reload;
 function reload()
@@ -55,12 +47,13 @@ function displaybuttons(){
     reprendre.style.display = "";
     corriger.style.display = "";
     valider.disabled = true;
+    
 }
        let Q=document.getElementsByName('Q1');
        let Q1=document.getElementsByName('Q2');
        let Q2=document.getElementsByName('Q3');
        let Q3=document.getElementsByName('Q4');
-       let Q7=document.getElementsByClassName('Q5');
+       let Q4=document.getElementsByClassName('Q5');
 
 let questions = [ 
     {
@@ -419,7 +412,7 @@ button.corigbtn:hover {
 <body>
     <h1 class="page-header">Hamade</h1>
 <div class="form-container">
-  <form action="" role="form">
+  <form action="" id="form" role="form">
     <input id='step2' type='checkbox'>
     <input id='step3' type='checkbox'>
     <input id='step4' type='checkbox'>
