@@ -5,216 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title> 
-    <script src="./logic_business.js" defer></script>
-    <style>
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@300&family=Poppins:ital,wght@1,200&family=Roboto:ital,wght@0,100;1,300&family=Tajawal:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
-*{
-    padding: 0;
-    margin:0;
-    font-family: "Josefin Sans", Arial;
-}
-body{
-    background-image: url(./assets/images/4.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    font-family: 'Roboto', sans-serif;
-    color:#fff;
-    font-weight: bold;
-}
-header{
-    background-color:#00002a;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 20px;
-}
-.logo {
-    border: 2px solid red;
-    border-radius: 5px;
-    padding: 5px 10px;
-    color: yellow;
-    font-size: 1.5em;
-    font-weight: 400;
-    margin-left: 50px;
-    font-family: 'Tajawal', sans-serif;
-    letter-spacing: 2px;
-    cursor: pointer;
-}
-
-ul{
-    list-style: none;
-}
-ul li {
-    display: inline-block;
-    padding: 5px 10px;
-    margin: 0 10px; 
-    border-bottom: 2px solid #fff;
-}
-
-ul li a {
-    font-size: 1.1em;
-    color:green;
-    text-decoration: none;
-    font-weight: 500;
-    letter-spacing: 2px;
-    transition: .3s;
-}
-
-ul li a:hover{
-        color: red;
-        text-decoration: underline;
-        font-weight: bold;
-}
-
-label{
-  border: solid 2px #36A;
-  height: 20px;
-  width: 20px;
-  display: inline-block;
-  margin: 4px;
-  vertical-align: middle;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 40px;
-}
-label>div{
-     width:14px;
-     height: 14px;
-     background-color: #fff;
-     border-radius: 40px;
-     transition: all 0.3s ease;
-}
-.Q8:checked+label>div{
-         background-color: yellow;
-         transition: all 0.3s ease;
-}
-.Q8{
-  display: none;
-}
-
-
-
-
-p.question {
-  font-family: Arial, sans-serif;
-	  font-size:20px;
-  color: #fff;
-  margin-bottom:0px;
-  
-}
-
-
-
-div.quizAnswers{
-  font-family: Arial, sans-serif;
-  font-size:16px;
-  color: #fff;
-  padding: 4px 0 4px 0;
-  height: 200px;
- 
-}
-
-label {
-  font-family: Arial, sans-serif;
-  font-size:14px;
-  color: #fff;
-  vertical-align:top;
-
-}
-
-
-
-
-input.quizSubmit[type="submit"]:hover {
-  color: #ffffff;
-  background: #680f11;
-  text-decoration: none;
-}
-
-table {
-  background-color: #5f84fe;
-  border:1px solid #000;
-  border-radius:20px;
-  padding:20px;
-  box-shadow: rgba(0, 0, 0, 0.498039) 0px 0px 1px 0px;
-  
-}
-
-profile-btn {
-  display: flex;
-}
-
-button.validebtn,
-button.resetbtn {
-  border: 0;
-  padding: 10px;
-  width: 10%;
-  border-radius: 50px;
-  background: #e40046;
-  color: #fff;
-  font-size: 1rem;
-  margin: 5px 2px;
-  cursor: pointer;
-  outline: none;
-  margin-bottom: 10px;
-  transition: background 0.3s ease-in-out;
-  box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.3);
-}
-
-button.validebtn:hover,
-button.resetbtn:hover {
-  background:#5f84fe;
-}
-button.startbtn,
-button.corigbtn{
-  border: 0;
-  padding: 10px;
-  width: 10%;
-  border-radius: 50px;
-  background: green;
-  color: #fff;
-  font-size: 1rem;
-  margin: 5px 2px;
-  cursor: pointer;
-  outline: none;
-  margin-bottom: 10px;
-  transition: background 0.3s ease-in-out;
-  box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.3);
-}
-
-button.startbtn:hover,
-button.corigbtn:hover {
-  background:#5f84fe;
-}
-
-button.passbtn{
-			margin-top: 15px;
-			background: yellow;
-			padding: 12px 60px;
-			border-radius: 50px;
-			color: #000;
-      font-size: 20px;
-			cursor: pointer;
-      font-weight: bold;
-		}
-
-button.passbtn:hover {
-  background:#5f84fe;
-}
-
-
-
-    </style>
+    <script src="./js/logic_business.js" defer></script>
+    <link rel="stylesheet" href="./css/Quiz.css">
 </head>
 <body>
-   
             <header>
                 <div class="logo">شنقيط</div>
                 <nav>
                    <ul>
+                       <li><a href="./welcom.html">Welcom</a></li>
                        <li><a href="home page .html">home</a></li>
                        <li><a href="quizz page.html">Quiz</a></li>
                        <li><a href="about page.html">About Us</a></li>
@@ -224,7 +23,13 @@ button.passbtn:hover {
             <section>
                 <br/> <br/>
                 <center>
-    <h2 class="quizHeader">Take a Quiz!</h2>
+                  <div class="waviy">
+                    <span style="--i:1">Q</span>
+                    <span style="--i:2">U</span>
+                    <span style="--i:3">I</span>
+                    <span style="--i:4">Z</span>
+                    <span style="--i:5">E</span>
+                  </div>
     <br/>
    <form id="form" name="form" action="">
 	<table style="width:583px"><tr>
@@ -236,7 +41,7 @@ button.passbtn:hover {
 	    	<ul>
                 <input type="radio" name="Q1" class="Q8"  value="home_MARKEUP_LANGUAGE" id="home_MARKEUP_LANGUAGE">
                 <label for="home_MARKEUP_LANGUAGE"><div></div></label> Home Tool Markup Language<br/>
-                      <input type="radio" name="Q1" class="Q8"  value="hyperlinks" id="hyperlinks">
+                <input type="radio" name="Q1" class="Q8"  value="hyperlinks" id="hyperlinks">
                 <label for="hyperlinks"><div></div></label>Hyperlinks and Text Markup Language<br/>
                 <input type="radio" name="Q1" class="Q8"  value="hyper_text" id="hyper_text">
                 <label for="hyper_text"><div></div></label>Hyper Text Markup Language<br/><br/>
@@ -265,7 +70,7 @@ button.passbtn:hover {
 	    	<ul>
                 <input type="radio" name="Q3" class="Q8"  value="utilisateur" id="utilisateur">
                 <label for="utilisateur"><div></div></label>Balises définis par l’utilisateur<br/>
-                      <input type="radio" name="Q3" class="Q8"  value="predefinis" id="predefinis">
+                <input type="radio" name="Q3" class="Q8"  value="predefinis" id="predefinis">
                 <label for="predefinis"><div></div></label>Balises prédéfinis<br/>
                 <input type="radio" name="Q3" class="Q8"  value="fixes_définis_par_langage" id="fixes_définis_par_langage">
                 <label for="fixes_définis_par_langage"><div></div></label>Balises fixes définis par le langage<br/><br/>
