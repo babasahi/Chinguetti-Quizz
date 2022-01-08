@@ -93,7 +93,9 @@ input[type=checkbox] {
 /* Styling Parts */
 #part1,
 #part2,
-#part3 {
+#part3,
+#part4, 
+#part5{
   z-index: 2;
   display: block;
   height: auto;
@@ -102,8 +104,11 @@ input[type=checkbox] {
 }
 
 /* Hidden Parts */
+
 #part2,
-#part3 {
+#part3,
+#part4, 
+#part5 {
   opacity: 0;
   height: 0;
   overflow: hidden;
@@ -130,6 +135,26 @@ input[type=checkbox] {
   width: 0;
   height: 0;
 }
+#step4:checked ~ #part4 {
+  opacity: 1;
+  height: auto;
+}
+#step4:checked ~ #part3 {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+#step5:checked ~ #part5 {
+  opacity: 1;
+  height: auto;
+}
+#step5:checked ~ #part4 {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+
 button.validebtn{
   float: right;
   border: 0;
@@ -188,6 +213,8 @@ button.corigbtn:hover {
   <form action="" role="form">
     <input id='step2' type='checkbox'>
     <input id='step3' type='checkbox'>
+    <input id='step4' type='checkbox'>
+    <input id='step5' type='checkbox'>
 
     <div id="part1" class="form-group">
       <div class="panel panel-primary">
@@ -234,7 +261,7 @@ button.corigbtn:hover {
         </div>
       </div>
     </div>
-    <div id="part2" class="form-group">
+    <div id="part3" class="form-group">
       <div class="panel panel-primary">
         <div class="panel-heading">
           <h3 class="panel-title">Where is this mosque in Mauritania?</h3>
@@ -248,18 +275,17 @@ button.corigbtn:hover {
         <input type="radio" name="Q3" class="Q8"  value="fixes_définis_par_langage" id="fixes_définis_par_langage">
         <label for="fixes_définis_par_langage"><div></div></label>Balises fixes définis par le langage<br/><br/>
         <div class="btn-group btn-group-lg btn-group-justified" role="group" aria-label="...">
-
-          <label for='step2' id="back-step2" class="back">
+          <label for='step3' id="back-step3" class="back">
             <div class="btn btn-default btn-primary btn-lg" role="button">Back</div>
           </label>
-          <label for='step3' id="continue-step3" class="continue">
+          <label for='step4' id="continue-step4" class="continue">
             <div class="btn btn-default btn-success btn-lg" role="button">Continue</div>
           </label>
 
         </div>
       </div>
     </div>
-    <div id="part2" class="form-group">
+    <div id="part4" class="form-group">
       <div class="panel panel-primary">
         <div class="panel-heading">
           <h3 class="panel-title">Where is this mosque in Mauritania?</h3>
@@ -274,10 +300,10 @@ button.corigbtn:hover {
         <label for="MB"><div></div></label>Microsoft Bing<br/><br/>
         <div class="btn-group btn-group-lg btn-group-justified" role="group" aria-label="...">
 
-          <label for='step2' id="back-step2" class="back">
+          <label for='step4' id="back-step4" class="back">
             <div class="btn btn-default btn-primary btn-lg" role="button">Back</div>
           </label>
-          <label for='step3' id="continue-step3" class="continue">
+          <label for='step5' id="continue-step3" class="continue">
             <div class="btn btn-default btn-success btn-lg" role="button">Continue</div>
           </label>
 
@@ -299,7 +325,7 @@ button.corigbtn:hover {
         <label for="HTML_PUBLIC"><div></div></label>!DOCTYPE html PUBLIC "-//W3C//DTD HTML5.0 Strict//EN"<br/><br/>
         <div class="btn-group btn-group-lg" role="group" aria-label="...">
             <br/>
-          <label for='step3' id="back-step3" class="back">
+          <label for='step5' id="back-step5" class="back">
             <div class="btn btn-default btn-primary btn-lg">Back</div>
           </label>
           </div>
