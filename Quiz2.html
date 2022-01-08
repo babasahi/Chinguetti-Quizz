@@ -69,7 +69,7 @@ let questions = [
     },
     {
         "choix" : Q1,
-        "reponse": 0
+        "reponse" : ""
     },
     {
         "choix" : Q2,
@@ -80,13 +80,10 @@ let questions = [
         "reponse" : 2
     },
     {
-        "choix" : Q4,
-        "reponse" : ""
-    },
-    {
-        "choix" : Q5,
-        "reponse" : 1
+      "choix" : Q4,
+        "reponse" : [0,2]
     }
+   
 ];
 
 
@@ -106,7 +103,7 @@ if(compteur == 15)
     do
     answer = prompt("Quelle question n'a aucune reponse",'entre 1 et 5, exemple : 2');
      while(isNaN(answer) || ( answer > 5) || (answer < 1));
-    if(answer == 3) {score+=2;
+    if(answer == 2) {score+=2;
         alert("DOMMAGE , VOTRE SCORE EST  : "+score + "\nVOUS NE CONNAISSEZ PAS RIM !");
      }
      else {
@@ -133,8 +130,8 @@ for(i=0;i<questions.length;i++)
     for( let j=0;j<3;j++)
     {
 
-        //Question 8
-        if (i==7)
+        //Question 5
+        if (i==4)
         { 
            for(let k=0;k<3;k++)
            {
@@ -162,8 +159,8 @@ for(i=0;i<questions.length;i++)
 
 
 
-            //Question 5
-       else if(i==4)
+            //Question 2
+       else if(i==1)
         {
             if(choix[j].checked)
             {
