@@ -52,7 +52,13 @@ function displaybuttons(){
        let Q2=document.getElementsByName('Q3');
        let Q3=document.getElementsByName('Q4');
        let Q4=document.getElementsByName('Q5');
-       let Q5=document.getElementsByClassName('Q8');
+       let Q5=document.getElementsByName('Q6');
+       let Q6=document.getElementsByName('Q7');
+       let Q7=document.getElementsByClassName('Q8');
+       let Q8=document.getElementsByName('Q9');
+       let Q9=document.getElementsByName('Q10');
+       let Q10=document.getElementsByName('Q11');
+       let Q11=document.getElementsByName('Q12');
 
 let questions = [ 
     {
@@ -77,8 +83,35 @@ let questions = [
     },
     {
         "choix" : Q5,
+        "reponse" : 1
+    },
+    {
+        "choix" : Q6,
+        "reponse" : 0
+    },
+    {
+        "choix" : Q7,
         "reponse" : [0,2]
+    },
+    {
+        "choix" : Q8,
+        "reponse" : 1
+    },
+    {
+        "choix" : Q9,
+        "reponse" : 1
+    },
+    {
+        "choix" : Q10,
+        "reponse" : 1
+    },
+    {
+        "choix" : Q11,
+        "reponse" : 1
     }
+
+    
+
 ];
 
 
