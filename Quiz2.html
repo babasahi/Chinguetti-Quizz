@@ -8,7 +8,6 @@
 
     <script>
 let input = document.getElementsByTagName('input');
-const valider = document.getElementById('valider');
 const corriger = document.getElementById('corriger');
 const reprendre = document.getElementById('reprendre');
 const back = document.getElementById('back-step5');
@@ -50,11 +49,11 @@ function displaybuttons(){
     back.disabled=true;
     
 }
-       let Q=document.getElementsByName('Q1');
+       let Q=document. getElementsByName('Q1');
        let Q1=document.getElementsByName('Q2');
        let Q2=document.getElementsByName('Q3');
        let Q3=document.getElementsByName('Q4');
-       let Q4=document.getElementsByClassName('Q5');
+       let Q4=document.getElementsByClassName('Q8');
 
 let questions = [ 
     {
@@ -75,13 +74,12 @@ let questions = [
     },
     {
       "choix" : Q4,
-        "reponse" : [0,2]
+      "reponse" : [0,2]
     }
    
 ];
 
 
-valider.onclick = result;
 function result(){
 for ( let i= 0 ;i<input.length;i++)
 {
@@ -413,7 +411,7 @@ button.corigbtn:hover {
 <body>
     <h1 class="page-header">Hamade</h1>
 <div class="form-container">
-  <form action="" id="form" role="form">
+  <form action="" id="form" >
     <input id='step2' type='checkbox'>
     <input id='step3' type='checkbox'>
     <input id='step4' type='checkbox'>
@@ -533,9 +531,9 @@ button.corigbtn:hover {
           </label>
           </div>
         </div>
-        <button class="validebtn" type="button" id="valider">Valider</button>
-        <a  href="reponse.html" target="_blank"><button class="corigbtn" type="button" id="corriger">Corriger</button> </a>
-        <button class="startbtn" type="button"  id="reprendre" >Reprendre</button>
+        <button class="validebtn" type="button" id="valider" onclick="result()">Valider</button>
+        <a  href="reponse.html" target="_blank"><button class="corigbtn" type="button" id="corriger" style="display: none;">Corriger</button> </a>
+        <button class="startbtn" type="button"  id="reprendre" style="display: none;" >Reprendre</button>
       </div>
     </div>
   </form>
