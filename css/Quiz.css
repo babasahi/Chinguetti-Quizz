@@ -218,3 +218,20 @@ button.passbtn:hover {
     transform: translateY(-20px)
   }
 }
+.quiz_user {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding-left: 30px;
+}
+
+.quiz_timer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100px;
+  background-color: #341f97;
+  color: #fff;
+}
+
