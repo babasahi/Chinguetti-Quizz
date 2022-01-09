@@ -16,14 +16,6 @@ const form = document.getElementById('form');
 let compteur = 0;
 let score=0;
 
-clear.onclick = resett;
-function resett(){
-    for (let i = 0;i<Q7.length;i++)
-    {
-        if(Q7[i].checked) Q7[i].checked = false;
-    }
-}
-
 reprendre.onclick = reload;
 function reload()
 {
@@ -59,8 +51,7 @@ function displaybuttons(){
        let Q1=document.getElementsByName('Q2');
        let Q2=document.getElementsByName('Q3');
        let Q3=document.getElementsByName('Q4');
-       let Q4=document.getElementsByName('Q5');
-       let Q5=document.getElementsByClassName('Q8');
+       let Q4=document.getElementsByClassName('Q8');
 
 
 let questions = [ 
@@ -82,10 +73,6 @@ let questions = [
     },
     {
         "choix" : Q4,
-        "reponse" : ""
-    },
-    {
-        "choix" : Q5,
         "reponse" : [0,2]
     }
 
