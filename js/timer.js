@@ -2,7 +2,7 @@ let dt = new Date(new Date().setTime(0));
 let ctime = dt.getTime();
 let seconds = Math.floor((ctime % (1000 * 60))/ 1000);
 let minutes = Math.floor((ctime % (1000 * 60 * 60))/( 1000 * 60));
-console.log(seconds, minutes);
+
 let time = 0;
 let mytime = setInterval(function(){
         time++;

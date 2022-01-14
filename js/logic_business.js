@@ -57,8 +57,6 @@ function displaybuttons(){
        let Q7=document.getElementsByClassName('Q8');
        let Q8=document.getElementsByName('Q9');
        let Q9=document.getElementsByName('Q10');
-       let Q10=document.getElementsByName('Q11');
-       let Q11=document.getElementsByName('Q12');
 
 let questions = [ 
     {
@@ -100,18 +98,8 @@ let questions = [
     {
         "choix" : Q9,
         "reponse" : 1
-    },
-    {
-        "choix" : Q10,
-        "reponse" : 1
-    },
-    {
-        "choix" : Q11,
-        "reponse" : 1
     }
-
     
-
 ];
 
 
@@ -126,7 +114,7 @@ for ( let i= 0 ;i<input.length;i++)
    
     
 }
-if(compteur == 36)
+if(compteur == 30)
 {       let answer;
     do
     answer = prompt("Quelle question n'a aucune reponse",'entre 1 et 10 , exemple : 2');

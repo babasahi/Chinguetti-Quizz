@@ -7,16 +7,15 @@
     <title>Document</title>
 
     <script>
-      
-let input = document.getElementsByTagName('input');
-const corriger = document.getElementById('corriger');
-const reprendre = document.getElementById('reprendre');
-const form = document.getElementById('form');
-
-let compteur = 0;
-let score=0;
-
-reprendre.onclick = reload;
+        let input = document.getElementsByTagName('input');
+        const form = document.getElementById('form');
+        let compteur = 0;
+        let score=0;
+        let vrai = 0;
+        let nonchecked = 4;
+        let check = 0;
+        let Totale = 4 ;
+        let v = 0 ;
 function reload()
 {
     location.reload();
@@ -24,63 +23,56 @@ return false;
 }
 
 
-form.onsubmit = unload;
 function unload(event){
     event.preventDefault();
 
 }
 
-
-
-corriger.onclick = deactivate;
-
 function deactivate(){
     corriger.disabled = true;
 }
 
-
-
-
 function displaybuttons(){
 
-    reprendre.style.display = "";
-    corriger.style.display = "";
-    valider.disabled = true;
+reprendre.style.display = "";
+corriger.style.display = "";
+valider.disabled=true;
+
 }
-       let Q=document.getElementsByName('Q1');
+
+
+
+       let Q=document.getElementsByClassName('hamade');
        let Q1=document.getElementsByName('Q2');
        let Q2=document.getElementsByName('Q3');
        let Q3=document.getElementsByName('Q4');
-       let Q4=document.getElementsByClassName('Q8');
-
+       
+ 
 
 let questions = [ 
     {
         "choix" : Q,
-        "reponse" : 2
+        "reponse" : [0,2]
     },
     {
         "choix" : Q1,
-        "reponse": 0
+        "reponse": ""
     },
     {
         "choix" : Q2,
-        "reponse" : 2
+        "reponse" : 0
     },
     {
         "choix" : Q3,
-        "reponse" : 2
-    },
-    {
-        "choix" : Q4,
-        "reponse" : [0,2]
+        "reponse" : 0
     }
+    
 
 ];
 
 
-
 function result(){
+
 for ( let i= 0 ;i<input.length;i++)
 {
     if(input[i].type == 'radio' && !input[i].checked)
@@ -88,42 +80,48 @@ for ( let i= 0 ;i<input.length;i++)
 
     }
    
-    
 }
-if(compteur == 15)
+
+if(compteur == 12)
 {       let answer;
     do
-    answer = prompt("Quelle question n'a aucune reponse",'entre 1 et 10 , exemple : 2');
-     while(isNaN(answer) || ( answer > 5) || (answer < 1));
+    answer = prompt("Quelle question n'a aucune reponse",'entre 1 et 4 ');
+     while(isNaN(answer) || ( answer > 4) || (answer < 1));
     if(answer == 2) {score+=2;
-        alert("DOMMAGE , VOTRE SCORE EST  : "+score + "\nVOUS NE CONNAISSEZ PAS L'HTML !");
+        alert(" Score:"+score + "\n" + "tq" + Totale + "\n" + "QR"+check + "\n" + "noncked"+nonchecked );
      }
      else {
-        alert("DOMMAGE , VOTRE SCORE EST  : "+score + "\nVOUS NE CONNAISSEZ PAS L'HTML !");
+        alert(" Score: "+score );
      }
      displaybuttons();
      return ;
 }
+  if(compteur >3 && compteur<=6)
+   nonchecked-=3;
+   if(compteur >6 && compteur<=9) 
+   nonchecked-=2;
+   if(compteur > 9 && compteur<12)
+   nonchecked-=1;
+   
+   check = Totale-nonchecked ;
 
-score=0;
-
-       
+   score=0;
+ 
 for(i=0;i<questions.length;i++)
 {
 
     let choix = questions[i].choix;
 
     let reponse = questions[i].reponse;
-    let juste = 0;
-    let nonchecked = 0;
-    let check = 0;
+    let bi = 0 ;
     let compteurcheck = 0;
 
     for( let j=0;j<3;j++)
     {
 
-        //Question 5
-        if (i==4)
+
+      //Question 1
+      if (i==0)
         { 
            for(let k=0;k<3;k++)
            {
@@ -140,15 +138,10 @@ for(i=0;i<questions.length;i++)
                }
             else score+=-1;
             break;
-       
-        
-              
     }
 
-
-
-            //Question 2
-       else if(i==1)
+    //pour Q2
+    else if(i==1)
         {
             if(choix[j].checked)
             {
@@ -156,22 +149,16 @@ for(i=0;i<questions.length;i++)
                 break;
             }
             else {
-                nonchecked ++;
+                bi ++;
             }
 
-            if (nonchecked == 3 && j==2)
+            if (bi == 3 && j==2)
             {
                 score+=2;
                 break;
             }
         }
-       
-
-       
-
-        //Les autres questions
-else {
-
+    else {
 
        if (choix[j].checked )
        {
@@ -184,22 +171,37 @@ else {
        else score+=0;
     }
 }
+
+}
+alert("SCORE : "+score + "Rnp" +nonchecked);
+displaybuttons();
+
 }
 
-           
-     
-           if(18<=score)
-           {alert("TRES BONNE CONNAISSANCE DU HTML \n SCORE : "+score);}
-           else if(12<=score && score<18)
-           {alert("BONNE CONNAISSANCE DU HTML \n SCORE : "+score);}
-          else if(8<=score && score<12)
-           {alert("CONNAISSANCE MOYENNE DU HTML \n SCORE : "+score);}
-           else
-           {alert("VOUS NE CONNAISSEZ PAS LE HTML \n SCORE : "+score);}
-           displaybuttons();
-           
-        
-  }  
+//ADD A COUNTDOWN
+let time = 14;
+let quizTimeInMinutes = time * 60 * 60 ;
+quizTime = quizTimeInMinutes / 60 ;
+
+
+function startCountdown() {
+  let quizTimer = setInterval( function() {
+    if (quizTime <= 0 ) {
+      clearInterval(quizTimer);
+      result();
+      
+    } else{
+      quizTime--;
+      let sec = Math.floor(quizTime % 60);
+      let min = Math.floor(quizTime / 60) % 60;
+      let formatted_sec = sec < 10 ? `0${sec}`: `${sec}`;
+      let formatted_min = min < 10 ? `0${min}`: `${min}`
+      document.getElementById("time").innerHTML = `${formatted_min} : ${formatted_sec}`;
+    }
+  
+  }, 1000)
+}
+startCountdown();
   
 
     </script>
@@ -209,10 +211,55 @@ else {
   font-family: 'Roboto', sans-serif;
   text-align: center;
   color: wheat;
-  background: url(./assets/images/50.jpg) no-repeat;
+  background:#00002a;
   background-position: center;
   background-size: cover;
 }
+header{
+    background-color:#00002a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+}
+.logo {
+    border: 2px solid red;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: yellow;
+    font-size: 1.5em;
+    font-weight: 400;
+    margin-left: 50px;
+    font-family: 'Tajawal', sans-serif;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+ul{
+    list-style: none;
+}
+ul li {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 0 10px; 
+    border-bottom: 2px solid #fff;
+}
+
+ul li a {
+    font-size: 1.1em;
+    color:green;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 2px;
+    transition: .3s;
+}
+
+ul li a:hover{
+        color: red;
+        text-decoration: underline;
+        font-weight: bold;
+}
+
 .form-container {
   width: 100%;
   max-width: 650px;
@@ -221,16 +268,14 @@ else {
 }
 
 label{
-  height: 20px;
-  width: 20px;
-  display: inline-block;
+ 
   margin: 2px;
   vertical-align: middle;
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  border-radius: 40px;
-  text-align: justify;
+
+  
 }
 
 
@@ -312,7 +357,7 @@ input[type=checkbox] {
   overflow: hidden;
 }
 
-/* Show Step 2 & Hide Step 1 */
+/* Show Step 2 & Hide Step  */
 #step2:checked ~ #part2 {
   opacity: 1;
   height: auto;
@@ -333,6 +378,7 @@ input[type=checkbox] {
   width: 0;
   height: 0;
 }
+/* Show Step 4  & Hide Step 3 */
 #step4:checked ~ #part4 {
   opacity: 1;
   height: auto;
@@ -342,6 +388,7 @@ input[type=checkbox] {
   width: 0;
   height: 0;
 }
+/* Show Step 5 & Hide Step 4 */
 #step5:checked ~ #part5 {
   opacity: 1;
   height: auto;
@@ -391,7 +438,7 @@ button.corigbtn{
   box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.3);
 }
 button.startbtn{
-    margin-left: 40px;
+    margin-right: 150px;
     margin-top:30px;
 }
 
@@ -401,18 +448,142 @@ button.corigbtn:hover {
 }
  img{
   border-radius: 22px;
+  
+  
 }
+
+
+.box{
+  padding: 10px 20px;
+  background: white;
+  border-radius: 12px;
+  
+}
+ .box label{
+  display: flex;
+  height: 53px;
+  width: 100%;
+  align-items: center;
+  border: 1px solid lightgrey;
+  border-radius: 50px;
+  margin: 10px 0;
+  padding-left: 10px;
+  cursor: default;
+  transition: all 0.3s ease;
+}
+#option-1:checked ~ .option-1,
+#option-2:checked ~ .option-2,
+#option-3:checked ~ .option-3,
+#option-11:checked ~ .option-11,
+#option-22:checked ~ .option-22,
+#option-33:checked ~ .option-33,
+#option-111:checked ~ .option-111,
+#option-222:checked ~ .option-222,
+#option-333:checked ~ .option-333,
+#option-1111:checked ~ .option-1111,
+#option-2222:checked ~ .option-2222,
+#option-3333:checked ~ .option-3333{
+  background: #333;
+  border-color: #333;
+}
+ .box label .dot{
+  height: 20px;
+  width: 20px;
+  background: #d9d9d9;
+  border-radius: 50%;
+  position: relative;
+  transition: all 0.3s ease;
+}
+#option-1:checked ~ .option-1 .dot,
+#option-2:checked ~ .option-2 .dot,
+#option-3:checked ~ .option-3 .dot,
+#option-11:checked ~ .option-11 .dot,
+#option-22:checked ~ .option-22 .dot,
+#option-33:checked ~ .option-33 .dot
+#option-111:checked ~ .option-111 .dot,
+#option-222:checked ~ .option-222 .dot,
+#option-333:checked ~ .option-333 .dot,
+#option-1111:checked ~ .option-1111 .dot,
+#option-2222:checked ~ .option-2222 .dot,
+#option-3333:checked ~ .option-3333 .dot{
+  background:green;
+}
+.box label .dot::before{
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(2);
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+#option-1:checked ~ .option-1 .dot::before,
+#option-2:checked ~ .option-2 .dot::before,
+#option-3:checked ~ .option-3 .dot::before,
+#option-11:checked ~ .option-11 .dot::before,
+#option-22:checked ~ .option-22 .dot::before,
+#option-33:checked ~ .option-33 .dot::before,
+#option-111:checked ~ .option-111 .dot::before,
+#option-222:checked ~ .option-222 .dot::before,
+#option-333:checked ~ .option-333 .dot::before,
+#option-1111:checked ~ .option-1111 .dot::before,
+#option-2222:checked ~ .option-2222 .dot::before,
+#option-3333:checked ~ .option-3333 .dot::before{
+  background: #333;
+  transform: translate(-50%, -50%) scale(1);
+}
+ .box label .text{
+  color: #333;
+  font-size: 18px;
+  font-weight: 400;
+  padding-left: 10px;
+  transition: color 0.3s ease;
+}
+#option-1:checked ~ .option-1 .text,
+#option-2:checked ~ .option-2 .text,
+#option-3:checked ~ .option-3 .text,
+#option-11:checked ~ .option-11 .text,
+#option-22:checked ~ .option-22 .text,
+#option-33:checked ~ .option-33 .text,
+#option-111:checked ~ .option-111 .text,
+#option-222:checked ~ .option-222 .text,
+#option-333:checked ~ .option-333 .text,
+#option-1111:checked ~ .option-1111 .text,
+#option-2222:checked ~ .option-2222 .text,
+#option-3333:checked ~ .option-3333 .text{
+  color: #fff;
+}
+ .box input[type="radio"]{
+  display: none;
+}
+
 
    </style>
 </head>
 <body>
-    <h1 class="page-header">Hamade</h1>
-<div class="form-container">
-  <form action="" id="form" >
+  <header>
+    <div class="logo">شنقيط</div>
+    <nav>
+       <ul>
+           <li><a href="./welcom.html">Welcom</a></li>
+           <li><a href="home page .html">home</a></li>
+           <li><a href="quizz page.html">Quiz</a></li>
+           <li><a href="about page.html">About Us</a></li>
+       </ul>
+    </nav>
+</header>
+      </div>
+    <div class="page-header">
+      <span  id="time">00:00</span>
+    </div>
+ <div class="form-container">
+  <form action="" id="form" onsubmit="unload">
     <input id='step2' type='checkbox'>
     <input id='step3' type='checkbox'>
     <input id='step4' type='checkbox'>
-    <input id='step5' type='checkbox'>
+    <input id='step5' type='checkbox'> 
 
     <div id="part1" class="form-group">
       <div class="panel panel-primary">
@@ -421,12 +592,23 @@ button.corigbtn:hover {
         </div>
         <img src="./assets/images/30.jpg" alt="mm" width="600px" height="400px" >
         <br/><br/><br/>
-        <input type="radio" name="Q1" class="Q8"  value="home_MARKEUP_LANGUAGE" id="home_MARKEUP_LANGUAGE">
-        <label for="home_MARKEUP_LANGUAGE"><div></div></label> Home Tool Markup Language<br/>
-        <input type="radio" name="Q1" class="Q8"  value="hyperlinks" id="hyperlinks">
-        <label for="hyperlinks"><div></div></label>Hyperlinks and Text Markup Language<br/>
-        <input type="radio" name="Q1" class="Q8"  value="hyper_text" id="hyper_text">
-        <label for="hyper_text"><div></div></label>Hyper Text Markup Language<br/><br/>
+        <div class="box">
+          <input type="radio" name="Q1" id="option-1" class="hamade">
+          <input type="radio" name="Q12" id="option-2" class="hamade">
+          <input type="radio" name="Q13" id="option-3" class="hamade">
+          <label for="option-1" class="option-1">
+            <div class="dot"></div>
+            <div class="text">Gamer</div>
+          </label>
+          <label for="option-2" class="option-2">
+            <div class="dot"></div>
+            <div class="text">YouTuber</div>
+          </label>
+          <label for="option-3" class="option-3">
+            <div class="dot"></div>
+            <div class="text">Student</div>
+          </label>
+        </div>
         <div class="btn-group btn-group-lg" role="group" aria-label="...">
           <label for='step2' id="continue-step2" class="continue">
           <div class="btn btn-default btn-success btn-lg">Continue</div>
@@ -441,21 +623,30 @@ button.corigbtn:hover {
         </div>
         <img src="./assets/images/40.jpg" alt="mm" width="600px" height="400px">
         <br/><br/>
-        <input type="radio" name="Q2" class="Q8"  value="balisage" id="balisage">
-        <label for="balisage"><div></div></label>Langage de balisage<br/>
-        <input type="radio" name="Q2" class="Q8"  value="haut_nv" id="haut_nv">
-        <label for="haut_nv"><div></div></label>Langage de haut niveau<br/>
-        <input type="radio" name="Q2" class="Q8"  value="lp" id="lp">
-        <label for="lp"><div></div></label>Langage de programmation<br/><br/>
+        <div class="box">
+          <input type="radio" name="Q2" id="option-11">
+          <input type="radio" name="Q2" id="option-22">
+          <input type="radio" name="Q2" id="option-33">
+          <label for="option-11" class="option-11">
+            <div class="dot"></div>
+            <div class="text">Game</div>
+          </label>
+          <label for="option-22" class="option-22">
+            <div class="dot"></div>
+            <div class="text">YouTube</div>
+          </label>
+          <label for="option-33" class="option-33">
+            <div class="dot"></div>
+            <div class="text">Studen</div>
+          </label>
+        </div>
         <div class="btn-group btn-group-lg btn-group-justified" role="group" aria-label="...">
-
           <label for='step2' id="back-step2" class="back">
             <div class="btn btn-default btn-primary btn-lg" role="button">Back</div>
           </label>
           <label for='step3' id="continue-step3" class="continue">
             <div class="btn btn-default btn-success btn-lg" role="button">Continue</div>
           </label>
-
         </div>
       </div>
     </div>
@@ -466,12 +657,23 @@ button.corigbtn:hover {
         </div>
         <img src="./assets/images/40.jpg" alt="mm" width="600px" height="400px">
         <br/><br/>
-        <input type="radio" name="Q3" class="Q8"  value="utilisateur" id="utilisateur">
-        <label for="utilisateur"><div></div></label>Balises définis par l’utilisateur<br/>
-        <input type="radio" name="Q3" class="Q8"  value="predefinis" id="predefinis">
-        <label for="predefinis"><div></div></label>Balises prédéfinis<br/>
-        <input type="radio" name="Q3" class="Q8"  value="fixes_définis_par_langage" id="fixes_définis_par_langage">
-        <label for="fixes_définis_par_langage"><div></div></label>Balises fixes définis par le langage<br/><br/>
+        <div class="box">
+          <input type="radio" name="Q3" id="option-111">
+          <input type="radio" name="Q3" id="option-222">
+          <input type="radio" name="Q3" id="option-333">
+          <label for="option-111" class="option-111">
+            <div class="dot"></div>
+            <div class="text">Ga</div>
+          </label>
+          <label for="option-222" class="option-222">
+            <div class="dot"></div>
+            <div class="text">YouTu</div>
+          </label>
+          <label for="option-333" class="option-333">
+            <div class="dot"></div>
+            <div class="text">Studen</div>
+          </label>
+        </div>
         <div class="btn-group btn-group-lg btn-group-justified" role="group" aria-label="...">
           <label for='step3' id="back-step3" class="back">
             <div class="btn btn-default btn-primary btn-lg" role="button">Back</div>
@@ -490,47 +692,33 @@ button.corigbtn:hover {
         </div>
         <img src="./assets/images/40.jpg" alt="mm" width="600px" height="400px">
         <br/><br/>
-        <input type="radio" name="Q4" class="Q8"  value="MF" id="MF">
-        <label for="MF"><div></div></label>Mozilla Firefox<br/>
-          <input type="radio" name="Q4" class="Q8"  value="NETSCAPE" id="NETSCAPE">
-        <label for="NETSCAPE"><div></div></label>Netscape<br/>
-        <input type="radio" name="Q4" class="Q8"  value="MB" id="MB">
-        <label for="MB"><div></div></label>Microsoft Bing<br/><br/>
+        <div class="box">
+          <input type="radio" name="Q4" id="option-1111">
+          <input type="radio" name="Q4" id="option-2222">
+          <input type="radio" name="Q4" id="option-3333">
+          <label for="option-1111" class="option-1111">
+            <div class="dot"></div>
+            <div class="text">Ga</div>
+          </label>
+          <label for="option-2222" class="option-2222">
+            <div class="dot"></div>
+            <div class="text">YouTu</div>
+          </label>
+          <label for="option-3333" class="option-3333">
+            <div class="dot"></div>
+            <div class="text">Studen</div>
+          </label>
+        </div>
         <div class="btn-group btn-group-lg btn-group-justified" role="group" aria-label="...">
 
           <label for='step4' id="back-step4" class="back">
             <div class="btn btn-default btn-primary btn-lg" role="button">Back</div>
           </label>
-          <label for='step5' id="continue-step3" class="continue">
-            <div class="btn btn-default btn-success btn-lg" role="button">Continue</div>
+          <button class="validebtn" type="button" id="valider" onclick="result()">Valider</button>
+          <a  href="reponse.html" target="_blank"><button class="corigbtn" type="button" id="corriger" style="display : none;">Corriger</button> </a>
+          <button class="startbtn" type="button" style="display : none;" id="reprendre" onclick="reload()" >Reprendre</button>
           </label>
-
         </div>
-      </div>
-    </div>
-    <div id="part5" class="form-group">
-      <div class="panel panel-primary">
-        <div class="panel-heading">
-          <h3 class="panel-title">Part 5</h3>
-        </div>
-        <img src="./assets/images/50.jpg" alt="mm" width="600px" height="400px">
-        <br/><br/>
-        <input type="radio" name="Q5" class="Q8"  value="HTML5" id="HTML5">
-        <label for="HTML5"><div></div></label>!DOCTYPE html5<br/>
-        <input type="radio" name="Q51" class="Q8"  value="HTML" id="HTML">
-        <label for="HTML"><div></div></label>!DOCTYPE html<br/>
-        <input type="radio" name="Q52" class="Q8"  value="HTML_PUBLIC" id="HTML_PUBLIC">
-        <label for="HTML_PUBLIC"><div></div></label>!DOCTYPE html PUBLIC "-//W3C//DTD HTML5.0 Strict//EN"<br/><br/>
-        <div class="btn-group btn-group-lg" role="group" aria-label="...">
-            <br/>
-          <label for='step5' id="back-step5" class="back">
-            <div class="btn btn-default btn-primary btn-lg">Back</div>
-          </label>
-          </div>
-        </div>
-        <button class="validebtn" type="button" id="valider">Valider</button>
-        <a  href="reponse.html" target="_blank"><button class="corigbtn" type="button" id="corriger" style="display: none;">Corriger</button> </a>
-        <button class="startbtn" type="button"  id="reprendre" style="display: none;" >Reprendre</button>
       </div>
     </div>
   </form>
