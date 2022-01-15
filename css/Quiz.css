@@ -73,9 +73,10 @@ label{
 label::before{
       content: "";
       height: 30px;
-      width: 30px;
+      width: 10px;
       border: 3px solid #01cc56;
       border-radius: 50px;
+      
 }
 .Q8:checked+label>div{
          background-color: yellow;
