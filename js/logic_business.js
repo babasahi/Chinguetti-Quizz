@@ -225,6 +225,7 @@ else {
            {alert("CONNAISSANCE MOYENNE DU HTML \n SCORE : "+score);}
            else
            {alert("VOUS NE CONNAISSEZ PAS LE HTML \n SCORE : "+score);}
+           location.href="end.html" 
            displaybuttons();
-                
+           
   }
