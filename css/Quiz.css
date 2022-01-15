@@ -65,16 +65,18 @@ label{
   font-family: 'Courier New', Courier, monospace;
   font-size: 30px;
   border: 2px solid #01cc56;
-  border-radius: 5px;
+  border-radius: 50px;
   padding: 20px 50px;
-  display: flex;
   cursor: pointer;
+  display: flex;
+  margin-left: 0;
+
 }
 label::before{
       content: "";
       height: 30px;
       width: 30px;
-      border: 3px solid #01cc56;
+      border: 1px solid #01cc56;
       border-radius: 50px;
       
 }
@@ -86,7 +88,7 @@ input[type="radio"]:checked + label:before{
    height: 16px;
    width: 16px;
    border: 10px solid wheat;
-   background-color: #01cc56;
+
 }
 input[type="radio"]{
   display: none;
