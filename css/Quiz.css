@@ -98,27 +98,6 @@ p.question {
 }
 
 
-
-div.quizAnswers{
-  font-family: Arial, sans-serif;
-  font-size:16px;
-  color: #fff;
-  padding: 4px 0 4px 0;
-  height: 200px;
- 
-}
-
-label {
-  font-family: Arial, sans-serif;
-  font-size:14px;
-  color: #fff;
-  vertical-align:top;
-
-}
-
-
-
-
 input.quizSubmit[type="submit"]:hover {
   color: #ffffff;
   background: #680f11;
