@@ -61,12 +61,12 @@ ul li a:hover{
 
 label{
   position: relative;
-  color: #01cc65;
+  color: wheat;
   font-family: 'Courier New', Courier, monospace;
   font-size: 30px;
   border: 2px solid #01cc56;
   border-radius: 50px;
-  padding: 20px 50px;
+  padding: 20px 30px;
   cursor: pointer;
   display: flex;
   margin-left: 0;
@@ -110,11 +110,12 @@ input.quizSubmit[type="submit"]:hover {
 }
 
 table {
-  background-color: #5f84fe;
+  background-color: black;
   border:1px solid #000;
   border-radius:20px;
   padding:20px;
   box-shadow: rgba(0, 0, 0, 0.498039) 0px 0px 1px 0px;
+
   
 }
 
