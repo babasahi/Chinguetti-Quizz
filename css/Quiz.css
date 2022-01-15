@@ -66,16 +66,16 @@ label{
   font-size: 30px;
   border: 2px solid #01cc56;
   border-radius: 5px;
-  padding: 10px 50px;
+  padding: 20px 50px;
   display: flex;
   
 }
-label>div{
-     width:14px;
-     height: 14px;
-     background-color: #fff;
-     border-radius: 40px;
-     transition: all 0.3s ease;
+label::before{
+      content: "";
+      height: 30px;
+      width: 30px;
+      border: 3px solid #01cc56;
+      border-radius: 50px;
 }
 .Q8:checked+label>div{
          background-color: yellow;
