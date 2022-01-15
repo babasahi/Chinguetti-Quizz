@@ -60,48 +60,64 @@ ul li a:hover{
 }
 
 label{
-  position: relative;
-  color: wheat;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 30px;
-  border: 2px solid #01cc56;
-  border-radius: 50px;
-  padding: 20px 30px;
-  cursor: pointer;
-  display: flex;
-  margin-left: 0;
-
+  border: solid 2px #36A;
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  margin: 4px;
+  vertical-align: middle;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
 }
-label::before{
-      content: "";
-      height: 30px;
-      width: 30px;
-      border: 1px solid #01cc56;
-      border-radius: 50px;
-      
+label>div{
+     width:14px;
+     height: 14px;
+     background-color: #fff;
+     border-radius: 40px;
+     transition: all 0.3s ease;
 }
-input[type="radio"]:checked + label {
-  background-color: #00002a;
-  color: #fff;
+.Q8:checked+label>div{
+         background-color: yellow;
+         transition: all 0.3s ease;
 }
-input[type="radio"]:checked + label:before{
-   height: 16px;
-   width: 16px;
-   border: 10px solid wheat;
-
-}
-input[type="radio"]{
+.Q8{
   display: none;
 }
 
 
+
+
 p.question {
-    font-family: Arial, sans-serif;
+  font-family: Arial, sans-serif;
 	  font-size:20px;
-    color: #fff;
-    margin-bottom:0px;
+  color: #fff;
+  margin-bottom:0px;
   
 }
+
+
+
+div.quizAnswers{
+  font-family: Arial, sans-serif;
+  font-size:16px;
+  color: #fff;
+  padding: 4px 0 4px 0;
+  height: 200px;
+ 
+}
+
+label {
+  font-family: Arial, sans-serif;
+  font-size:14px;
+  color: #fff;
+  vertical-align:top;
+
+}
+
+
+
 
 input.quizSubmit[type="submit"]:hover {
   color: #ffffff;
@@ -110,12 +126,11 @@ input.quizSubmit[type="submit"]:hover {
 }
 
 table {
-  background-color: black;
+  background-color: #5f84fe;
   border:1px solid #000;
   border-radius:20px;
   padding:20px;
   box-shadow: rgba(0, 0, 0, 0.498039) 0px 0px 1px 0px;
-
   
 }
 
@@ -167,24 +182,19 @@ button.corigbtn:hover {
 }
 
 button.passbtn{
-		position: relative;
-    display: inline-block;
-    padding: 10px 20px;
-    color: #2196f3;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    text-decoration: none;
-    font-size: 24px;
-    background-color: #000;
-    border-radius: 25px;
-   
+			margin-top: 15px;
+			background: yellow;
+			padding: 14px 50px;
+			border-radius: 50px;
+			color: #000;
+      font-size: 20px;
+			cursor: pointer;
+      font-weight: bold;
 		}
 
 button.passbtn:hover {
-      color:black;
-      background: white;
-      
-  }
+  background:#5f84fe;
+}
 .waviy {
   position: relative;
   -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
