@@ -120,11 +120,13 @@ if(compteur == 30)
     answer = prompt("Quelle question n'a aucune reponse",'entre 1 et 10 , exemple : 2');
      while(isNaN(answer) || ( answer > 10) || (answer < 1));
     if(answer == 5) {score+=2;
+       
         alert("DOMMAGE , VOTRE SCORE EST  : "+score + "\nVOUS NE CONNAISSEZ PAS L'HTML !");
      }
      else {
         alert("DOMMAGE , VOTRE SCORE EST  : "+score + "\nVOUS NE CONNAISSEZ PAS L'HTML !");
      }
+     sessionStorage.setItem("points", score);
      displaybuttons();
      return ;
 }
@@ -157,7 +159,7 @@ for(i=0;i<questions.length;i++)
             }
            }
            if(compteurcheck == 2 && !choix[1].checked) {
-               score+=2; break; }
+               score+=2;break; }
                else if (compteurcheck == 0)
                {
                    break;
@@ -213,9 +215,8 @@ else {
     }
 }
 }
-
            
-     
+            sessionStorage.setItem("points", score);    
            if(18<=score)
            {alert("TRES BONNE CONNAISSANCE DU HTML \n SCORE : "+score);}
            else if(12<=score && score<18)
@@ -225,6 +226,5 @@ else {
            else
            {alert("VOUS NE CONNAISSEZ PAS LE HTML \n SCORE : "+score);}
            displaybuttons();
-           
-        
+                
   }

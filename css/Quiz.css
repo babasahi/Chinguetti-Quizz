@@ -33,7 +33,7 @@ header{
     letter-spacing: 2px;
     cursor: pointer;
 }
-
+  
 ul{
     list-style: none;
 }
@@ -51,6 +51,7 @@ ul li a {
     font-weight: 500;
     letter-spacing: 2px;
     transition: .3s;
+  
 }
 
 ul li a:hover{
