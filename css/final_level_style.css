@@ -344,5 +344,7 @@ img {
   width: 100px;
   background-color: #341f97;
   color: #fff;
-  margin-left: 50%;
+  margin-left: 45%;
+  border-radius: 50%;
+  
 }
