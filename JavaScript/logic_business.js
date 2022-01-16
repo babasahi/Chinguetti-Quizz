@@ -16,6 +16,14 @@ location.reload();
 return false;
 }
 
+function resett(){
+    for (let i = 0;i<Q7.length;i++)
+    {
+        if(Q[i].checked) Q[i].checked = false;
+    }
+}
+
+
 
 function unload(event){
 event.preventDefault();
