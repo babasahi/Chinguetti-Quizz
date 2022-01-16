@@ -16,6 +16,7 @@ location.reload();
 return false;
 }
 
+
 function resett(){
     for (let i = 0;i<Q7.length;i++)
     {
