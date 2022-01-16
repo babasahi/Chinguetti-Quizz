@@ -8,6 +8,7 @@ let vrai = 0;
 let nonchecked = 7;
 let check = 0;
 let Totale = 7 ;
+
 sessionStorage.setItem("TotalQeustion", Totale);
 
 function reload()
