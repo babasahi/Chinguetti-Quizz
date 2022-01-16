@@ -63,20 +63,22 @@ b{
 }
 
 .traditions p{
-    margin: 120px;
-    font-style: oblique;
+    margin: 90px;
+    font-style: normal;
+    font-size: 20px;
+    text-align: left;
  
-   
 }
 .Economie p{
     margin: 50px;
     font-style: normal;
-    
+    font-size: 20px;
+    text-align: left;
 }
 .his p{
     margin: 50px;
     font-style: normal;
-  
+    font-size: 20px;
 }
 .ad{
     margin: 50px;;
@@ -85,14 +87,15 @@ b{
    
 }
 .traditions img{
-    margin: 20px;
-
+    margin: 15px;
+  
 }
 .social p{
     margin: 50px;
     font-style: normal;
-
+    font-size: 20px;
 }
 .tourisme p{
     margin: 50px ;
+    font-size: 20px;
 }
