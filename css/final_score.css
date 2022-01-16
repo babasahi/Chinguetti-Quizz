@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Righteous|Unica+One|Nixie+One&display=swap');
+
+body {
+ margin: 0px;
+ height: 100%;
+ width: 100%;
+ font-family: 'Nixie One';
+ color: #242830;
+ background-color: #000a;
+}
+
+ /* jumbo */
+
+ .jumbo {
+     padding: left 50px;;
+     padding-left: 5px;
+     padding-top: 50px;
+     padding-bottom: 50px;
+     font-size: 35px;
+     font-weight: bold;
+     display: flex;
+     flex-direction: row;
+     transition: padding-left 0.5s, padding-right 0.5s;
+
+     }
+     div {
+       text-align: center;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+     }
+     
+     .text {
+       width: 30%;
+       text-align: left;
+       background-color: #f9e5b6;
+       padding: 50px;
+       border-radius: 10px;
+       display: flex;
+       flex-direction: column;
+       
+
+       }
+       .title {
+         font-family: 'Righteous';
+         font-size: 40px;
+       }
+       
+       .description {
+         font-family: 'Nixie One';
+         font-size: 15px;
+         margin-top: 20px;
+       }
+       
+       .btn {
+         background: #edc371;
+          font-size: 35px;
+         font-weight: bold;
+         display: flex;
+         height: 150px;
+         width: 400px;
+         transition: padding-left 0.5s, padding-right 0.5s;
+         
+       }
+       .tyr-btn {
+         margin-top: 25px;
+         border: none;
+         background: #edc371;
+         width: 100px;
+         font-family: 'Unica One';
+         font-size: 25px;
+         padding: 5px;
+         filter: grayscale(50%);
+         transition: filter 0.3s;
+         margin-left: 10px;
+         margin-top: 30px;
+       }
+       .Quite-btn {
+         margin-top: 25px;
+         border: none;
+         background: #edc371;
+         width: 100px;
+         font-family: 'Unica One';
+         font-size: 25px;
+         padding: 5px;
+         filter: grayscale(50%);
+         transition: filter 0.3s;
+         margin-left: 280px;
+         margin-top: -37px;
+       }
+       
+       button:hover {
+         filter: grayscale(0%);
+       }
+       
+       button:focus {
+         outline: none; 
+       }
