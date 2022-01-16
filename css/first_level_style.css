@@ -403,13 +403,5 @@ button.passbtn:hover {
   padding-left: 30px;
 }
 
-.quiz_timer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  width: 100px;
-  background-color: #341f97;
-  color: #fff;
-}
+
 

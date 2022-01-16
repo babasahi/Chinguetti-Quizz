@@ -336,3 +336,12 @@ img {
 .box input[type="radio"] {
   display: none;
 }
+#time {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100px;
+  background-color: #341f97;
+  color: #fff;
+}
