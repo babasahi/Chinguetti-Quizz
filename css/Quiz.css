@@ -140,7 +140,10 @@ input[type=checkbox] {
 #part2,
 #part3,
 #part4, 
-#part5{
+#part5,
+#part6,
+#part7,
+#part8{
   z-index: 2;
   display: block;
   height: auto;
@@ -153,7 +156,10 @@ input[type=checkbox] {
 #part2,
 #part3,
 #part4, 
-#part5 {
+#part5,
+#part6,
+#part7,
+#part8 {
   opacity: 0;
   height: 0;
   overflow: hidden;
@@ -190,7 +196,7 @@ input[type=checkbox] {
   width: 0;
   height: 0;
 }
-/* Show Step 5 & Hide Step 4 */
+/* Show Step 5  & Hide Step 4 */
 #step5:checked ~ #part5 {
   opacity: 1;
   height: auto;
@@ -200,17 +206,16 @@ input[type=checkbox] {
   width: 0;
   height: 0;
 }
-/* Show Step 6 & Hide Step 5 */
+
 #step6:checked ~ #part6 {
   opacity: 1;
   height: auto;
 }
-#step5:checked ~ #part5 {
+#step6:checked ~ #part5 {
   opacity: 0;
   width: 0;
   height: 0;
 }
-/* Show Step 7 & Hide Step 6 */
 #step7:checked ~ #part7 {
   opacity: 1;
   height: auto;
@@ -220,21 +225,12 @@ input[type=checkbox] {
   width: 0;
   height: 0;
 }
-/* Show Step 8 & Hide Step 7 */
-#step8:checked ~ #part8 {
-  opacity: 1;
-  height: auto;
-}
-#step8:checked ~ #part7 {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
+
 
 
 
 button.validebtn{
-  height: 50px;
+    height: 50px;
     width: 120px;
     margin: 10px 25px;
     border: none;
@@ -299,105 +295,9 @@ button.corigbtn:hover {
   cursor: default;
   transition: all 0.3s ease;
 }
-#option-1:checked ~ .option-1,
-#option-2:checked ~ .option-2,
-#option-3:checked ~ .option-3,
-#option-11:checked ~ .option-11,
-#option-22:checked ~ .option-22,
-#option-33:checked ~ .option-33,
-#option-111:checked ~ .option-111,
-#option-222:checked ~ .option-222,
-#option-333:checked ~ .option-333,
-#option-1111:checked ~ .option-1111,
-#option-2222:checked ~ .option-2222,
-#option-3333:checked ~ .option-3333,
-#option-11111:checked ~ .option-11111,
-#option-22222:checked ~ .option-22222,
-#option-33333:checked ~ .option-33333,
-#option-111111:checked ~ .option-111111,
-#option-222222:checked ~ .option-222222,
-#option-333333:checked ~ .option-333333,
-#option-1111111:checked ~ .option-1111111,
-#option-2222222:checked ~ .option-2222222,
-#option-3333333:checked ~ .option-3333333,
-#option-11111111:checked ~ .option-11111111,
-#option-22222222:checked ~ .option-22222222,
-#option-33333333:checked ~ .option-33333333{
-  background: #333;
-  border-color: #333;
-}
- .box label .dot{
-  height: 20px;
-  width: 20px;
-  background: #d9d9d9;
-  border-radius: 50%;
-  position: relative;
-  transition: all 0.3s ease;
-}
-#option-1:checked ~ .option-1 .dot,
-#option-2:checked ~ .option-2 .dot,
-#option-3:checked ~ .option-3 .dot,
-#option-11:checked ~ .option-11 .dot,
-#option-22:checked ~ .option-22 .dot,
-#option-33:checked ~ .option-33 .dot
-#option-111:checked ~ .option-111 .dot,
-#option-222:checked ~ .option-222 .dot,
-#option-333:checked ~ .option-333 .dot,
-#option-1111:checked ~ .option-1111 .dot,
-#option-2222:checked ~ .option-2222 .dot,
-#option-3333:checked ~ .option-3333 .dot{
-  background:green;
-}
-.box label .dot::before{
-  position: absolute;
-  content: "";
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(2);
-  width: 9px;
-  height: 9px;
-  border-radius: 50%;
-  transition: all 0.3s ease;
-}
-#option-1:checked ~ .option-1 .dot::before,
-#option-2:checked ~ .option-2 .dot::before,
-#option-3:checked ~ .option-3 .dot::before,
-#option-11:checked ~ .option-11 .dot::before,
-#option-22:checked ~ .option-22 .dot::before,
-#option-33:checked ~ .option-33 .dot::before,
-#option-111:checked ~ .option-111 .dot::before,
-#option-222:checked ~ .option-222 .dot::before,
-#option-333:checked ~ .option-333 .dot::before,
-#option-1111:checked ~ .option-1111 .dot::before,
-#option-2222:checked ~ .option-2222 .dot::before,
-#option-3333:checked ~ .option-3333 .dot::before{
-  background: #333;
-  transform: translate(-50%, -50%) scale(1);
-}
- .box label .text{
-  color: #333;
-  font-size: 18px;
-  font-weight: 400;
-  padding-left: 10px;
-  transition: color 0.3s ease;
-}
-#option-1:checked ~ .option-1 .text,
-#option-2:checked ~ .option-2 .text,
-#option-3:checked ~ .option-3 .text,
-#option-11:checked ~ .option-11 .text,
-#option-22:checked ~ .option-22 .text,
-#option-33:checked ~ .option-33 .text,
-#option-111:checked ~ .option-111 .text,
-#option-222:checked ~ .option-222 .text,
-#option-333:checked ~ .option-333 .text,
-#option-1111:checked ~ .option-1111 .text,
-#option-2222:checked ~ .option-2222 .text,
-#option-3333:checked ~ .option-3333 .text{
-  color: #fff;
-}
- .box input[type="radio"]{
-  display: none;
-}
+
+
+ 
 
 button.passbtn{
 			margin-top: 15px;
