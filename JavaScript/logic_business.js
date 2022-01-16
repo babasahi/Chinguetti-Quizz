@@ -16,14 +16,12 @@ location.reload();
 return false;
 }
 
-
 function resett(){
-    for (let i = 0;i<Q7.length;i++)
+    for (let i = 0;i<Q.length;i++)
     {
         if(Q[i].checked) Q[i].checked = false;
     }
 }
-
 
 
 function unload(event){
@@ -87,6 +85,8 @@ let questions = [
  }
 
 ];
+
+
 
 
 function result(){

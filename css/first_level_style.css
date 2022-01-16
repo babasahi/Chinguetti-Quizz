@@ -160,6 +160,15 @@ label{
     margin-right:70%;
     
   }
+  #clear {
+    border: none;
+    outline: none;
+    color: #e7f1fa;
+    background: #ff5235;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
 
 .continue {
     height: 50px;
@@ -180,7 +189,8 @@ label{
     margin: 10px 0;
 }
 .continue,
- .back:hover {
+ .back:hover,
+ #clear:hover{
     background: #e91e3a;
 }
 
