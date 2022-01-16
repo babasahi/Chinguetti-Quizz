@@ -8,12 +8,20 @@ let vrai = 0;
 let nonchecked = 7;
 let check = 0;
 let Totale = 7 ;
+
 sessionStorage.setItem("TotalQeustion", Totale);
 
 function reload()
 {
 location.reload();
 return false;
+}
+
+function resett(){
+    for (let i = 0;i<Q.length;i++)
+    {
+        if(Q[i].checked) Q[i].checked = false;
+    }
 }
 
 
@@ -78,6 +86,8 @@ let questions = [
  }
 
 ];
+
+
 
 
 function result(){
