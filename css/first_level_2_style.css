@@ -1,6 +1,10 @@
 body{
     font-family: 'roboto stab', serif;
-    background: #6cf;
+    background-color: white;
+    background-image: url("https://media.istockphoto.com/photos/mauritania-flag-wall-clock-watch-port-for-same-series-picture-id464983942?k=20&m=464983942&s=612x612&w=0&h=3RRmA3Xbu7yl81MTQBS2zTSQsTHeUQAEuS3HOddE57c=");
+   background-repeat: no-repeat;
+
+
 }
 i{
     border: 2px yellow solid;
@@ -10,11 +14,13 @@ i{
 }
 
 header{
-        background: color #042704;
+    background-color: cornflowerblue;
     display:flex;
     justify-content: space-between;
     align-items: center;
     padding: 0  15px;
+    margin: 10px;
+    border-radius:10px;
 
 }
 .Quiz{
@@ -49,29 +55,24 @@ header ul li a:hover{
 }
 
 .cont{
-    height: 400px;
-    width: 450px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    background: rgba(255,255,255,0.5);
-    padding: 30px;
-    border: 1px solid #fff;
-    box-shadow: 0 0 8px 3px #fff;
+    border-width: 15.2em;
+    border: solid 2px black;
+    border-radius: 20px;
+    margin:0 270px;
+    background-color: cornflowerblue;
 }
 .title{
     padding-top: 20px;
     text-align: center;
-    font-size: 15px;
+    font-size: 20px;
     text-transform: uppercase;
-    color: #08038c;
+    color: #000;
 }
 .question{
-    padding: 20px;
+    padding: 10px;
     font-size:22px;
-    background: #08038c
-    border-radius:20px;
+    background-color: #08038c;
+    border-radius:10px;
     margin: 10px 0 10px 0;
     color: #f6f6f6;
 }
@@ -86,31 +87,57 @@ header ul li a:hover{
     border-radius: 20px;
 }
 .Q1:hover{
-    background: #08038c
+    background: green;
     color : #f6f6f6;
 }
-.Sui-vant{
-    border: none;
-    outline: none;
-    background: rgba(19, 17, 19, 0.5);
+
+.Q2{
+    width: 470px;
+    display: inline-block;
+    padding: 10px 0 10px 5px;
+    vertical-align: middle;
+    background: rgba(255,255,255,0.5);
+    margin: 20px 0 10px 10px;
+    color: #000000;
+    border-radius: 20px;
+}
+.Q2:hover{
+    background: green;
+    color : #f6f6f6;
+}
+.Q3{
+    width: 470px;
+    display: inline-block;
+    padding: 10px 0 10px 5px;
+    vertical-align: middle;
+    background: rgba(255,255,255,0.5);
+    margin: 20px 0 10px 10px;
+    color: #000000;
+    border-radius: 20px;
+}
+.Q3:hover{
+    background: green;
+    color : #f6f6f6;
+}
+.vali-der{
+
+    background: blue;
     width: 100px;
     height: 35px;
     border-radius: 20px;
-    cursor: pointer;
     float: right;
+    margin:35px 10px 10px 0px;
+    
+}
+.vali-der:hover{
+    background:green;
+ 
+}
+.Effa-cer{
+    background: blue;
+    border-radius: 20px;
     margin: 10px;
-
-}
-.Sui-vant:hover{
-    background: #08038c;
-    color: green;
-}
-.result{
-    height: 100px;
-    text-align: center;
-    font-size: 40px;
-}
-.Q1 input:checked.Q1{
-    background: #08038c;
-    color: #000;
+    font-size: 10px;
+    width: 100px;
+    height: 35px;
 }
