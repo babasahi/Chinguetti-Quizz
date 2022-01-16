@@ -201,7 +201,7 @@ input[type=checkbox] {
   height: 0;
 }
 /* Show Step 6 & Hide Step 5 */
-#step6:checked ~ #part5 {
+#step6:checked ~ #part6 {
   opacity: 1;
   height: auto;
 }
@@ -210,6 +210,27 @@ input[type=checkbox] {
   width: 0;
   height: 0;
 }
+/* Show Step 7 & Hide Step 6 */
+#step7:checked ~ #part7 {
+  opacity: 1;
+  height: auto;
+}
+#step7:checked ~ #part6 {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+/* Show Step 8 & Hide Step 7 */
+#step8:checked ~ #part8 {
+  opacity: 1;
+  height: auto;
+}
+#step8:checked ~ #part7 {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
 
 
 button.validebtn{
@@ -289,7 +310,19 @@ button.corigbtn:hover {
 #option-333:checked ~ .option-333,
 #option-1111:checked ~ .option-1111,
 #option-2222:checked ~ .option-2222,
-#option-3333:checked ~ .option-3333{
+#option-3333:checked ~ .option-3333,
+#option-11111:checked ~ .option-11111,
+#option-22222:checked ~ .option-22222,
+#option-33333:checked ~ .option-33333,
+#option-111111:checked ~ .option-111111,
+#option-222222:checked ~ .option-222222,
+#option-333333:checked ~ .option-333333,
+#option-1111111:checked ~ .option-1111111,
+#option-2222222:checked ~ .option-2222222,
+#option-3333333:checked ~ .option-3333333,
+#option-11111111:checked ~ .option-11111111,
+#option-22222222:checked ~ .option-22222222,
+#option-33333333:checked ~ .option-33333333{
   background: #333;
   border-color: #333;
 }
