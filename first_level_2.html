@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Chinguetti</title>
+    <link rel="stylesheet" href="css/first_level_2_style.css">
+</head>
+<body>
+    <form>
+        <header>
+          <div class="Quiz">QUIZ CHINGUETTI </div>
+                          <nav>
+                           <ul>
+                            <li><a href="./welcome.html">Welcome</a></li>
+                               <li><a href="home page .html">home</a></li>
+                               <li><a href="quizz page.html">Quiz</a></li>
+                               <li><a href="about page.html">About Us</a></li>
+                           </ul>
+                        </nav>
+        </header>
+        <div id="Quiz" class="cont">
+            <div class="title">Quelle est la capitale economique de la Mauritanie</div>
+            <div id="question" class="question"></div>
+            <label class="Q1"><input type="radio" name="Q1" value="Nouadhibou" /> Nouadhibou<span id="Q1"></span></label> 
+            <label class="Q1"><input type="radio" name="Q1" value="Nouackchott" /> Nouakchott<span id="Q1"></span></label>
+            <label class="Q1"><input type="radio" name="Q1" value="Zouerat" /> Zouerat<span id="Q1"></span></label>
+            <button id="Suivant" class="Sui-vant" onclick="Questionsuivant">Question Suivant</button>
+        </div>
+        <div id="result" class="c result" style="display:none;">
+        </div>
+    </form>   
+</body>
+</html>

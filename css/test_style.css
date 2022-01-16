@@ -80,12 +80,7 @@ b{
     font-style: normal;
     font-size: 20px;
 }
-.ad{
-    margin: 50px;;
-    font-style: normal;
-    
-   
-}
+
 .traditions img{
   padding: 50px;
   
@@ -99,4 +94,7 @@ b{
 .tourisme p{
     margin: 50px ;
     font-size: 20px;
+}
+.ad{
+    margin: 20px;
 }

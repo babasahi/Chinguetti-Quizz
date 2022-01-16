@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rakkas&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
 :root {
   --primary: #ff4c29;
 }
@@ -13,7 +16,6 @@
   box-sizing: border-box;
   line-height: 1.5;
   transition: all 0.3s ease-in-out;
-  font-family: "Josefin Sans", Arial;
 }
 
 body {
@@ -33,18 +35,14 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px 20px;
 }
 .logo {
-  border: 2px solid red;
-  border-radius: 5px;
-  padding: 5px 10px;
-  color: yellow;
-  font-size: 1.5em;
-  font-weight: 400;
-  margin-left: 50px;
-  font-family: "Tajawal", sans-serif;
-  letter-spacing: 2px;
+  color: blue;
+  font-size: 58px;
+  font-weight: 100;
+  margin-left: 18px;
+  letter-spacing: 10;
+  font-family: "Rakkas";
   cursor: pointer;
 }
 
@@ -53,23 +51,23 @@ ul {
 }
 ul li {
   display: inline-block;
-  padding: 5px 10px;
-  margin: 0 10px;
-  border-bottom: 2px solid #fff;
+  margin-left: 8px;
+  margin-right: 22px;
 }
 
 ul li a {
-  font-size: 24px;
+  font-size: 28px;
   color: black;
   text-decoration: none;
-  font-weight: 800;
+  letter-spacing: 1px;
+  font-family: "Acme";
+  font-weight: 600;
   transition: 0.3s;
 }
 
 ul li a:hover {
-  color: red;
+  color: blue;
   text-decoration: underline;
-  font-weight: bold;
 }
 
 .btn {
@@ -101,42 +99,45 @@ ul li a:hover {
 .banner {
   display: flex;
   margin-top: 2rem;
+
   justify-content: space-around;
-  align-items: center;
   flex-wrap: wrap;
-  margin-left: 5px;
+  margin-left: 0px;
 }
 
-.banner .left {
+.banner .intro {
   width: 90%;
 }
 
-.banner .left h1 {
+.banner .intro h1 {
   text-transform: capitalize;
-  font-size: 2em;
+
   color: #fff;
   margin-left: 70px;
 }
 
-.banner .left h1 span {
+.banner .intro h1 span {
   color: var(--primary);
-  border-bottom: 3px solid var(--primary);
+  border-bottom: 3px solid blue;
+  font-family: "Acme";
+  color: black;
+  font-size: 42px;
 }
 
-.banner .left .buttons {
+.banner .intro .buttons {
   margin: 2rem 0;
   margin-left: 70px;
 }
 
-.banner .left .buttons .btn {
+.banner .intro .buttons .btn {
   margin: 0;
 }
 
-.banner .left .buttons .btn:nth-child(2) {
+.banner .intro .buttons .btn:nth-child(2) {
   margin: 0 1rem;
 }
 
-.banner .left p {
+.banner .intro p {
   color: #999;
   font-size: 14px;
   margin-left: 70px;
