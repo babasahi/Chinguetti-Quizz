@@ -9,7 +9,7 @@ let nonchecked = 7;
 let check = 0;
 let Totale = 7 ;
 sessionStorage.setItem("TotalQeustion", Totale);
-let v = 0 ;
+
 function reload()
 {
 location.reload();
