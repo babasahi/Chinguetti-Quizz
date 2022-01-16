@@ -102,9 +102,12 @@ else {
 alert(" Score: "+score );
 }
 sessionStorage.setItem("points", score);
+sessionStorage.setItem("nocheck", nonchecked);
 displaybuttons();
 return ;
 }
+sessionStorage.setItem("nocheck", nonchecked);
+sessionStorage.setItem("TotalQeustion", Totale);
 
 if(compteur >3 && compteur<=6)
 nonchecked-=6;
