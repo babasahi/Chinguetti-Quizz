@@ -8,6 +8,7 @@ let vrai = 0;
 let nonchecked = 7;
 let check = 0;
 let Totale = 7 ;
+sessionStorage.setItem("TotalQeustion", Totale);
 let v = 0 ;
 function reload()
 {
@@ -106,8 +107,7 @@ sessionStorage.setItem("nocheck", nonchecked);
 displaybuttons();
 return ;
 }
-sessionStorage.setItem("nocheck", nonchecked);
-sessionStorage.setItem("TotalQeustion", Totale);
+
 
 if(compteur >3 && compteur<=6)
 nonchecked-=6;
@@ -122,7 +122,7 @@ nonchecked-=2;
 if(compteur > 18 && compteur<21)
 nonchecked-=1;
 
-
+sessionStorage.setItem("nocheck", nonchecked);
 check = Totale-nonchecked ;
 
 score=0;
