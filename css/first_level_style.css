@@ -65,6 +65,61 @@ ul li a:hover{
     margin-left: 350px;
 }
 
+.radio-item [type="radio"] {
+     display: none;
+}
+.radio-item + .radio-item {
+    margin-top: 15px;
+}
+
+.radio-item label {
+  display: block;
+  padding: 20px 5px;
+  background: #1d1d42;
+  border: 2px solid rgba(255,255,255,0.1);
+  border-radius: 27px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 400;
+  min-width: 250px;
+  white-space: nowrap;
+  position: relative;
+  transition: .4s ease-in-out 0s;
+
+}
+.radio-item label:after,
+.radio-item label:before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+}
+.radio-item label:after {
+  height: 20px;
+  width: 20px;
+  border: 2px solid #524eee;
+  left: 20px;
+  top: calc(50% - 12px);
+}
+.radio-item label:before{
+  background: #524eee;
+  height: 10px;
+  width: 10px;
+  left: 27px;
+  top: calc(50% - 5px);
+  transform: scale(5);
+  opacity: 0;
+  visibility: hidden;
+  transition: .4s ease-in-out 0s;
+}
+.radio-item [type='radio']:checked ~ label {
+  border-color: #524eee;
+}
+.radio-item [type='radio']:checked ~ label:before {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+
 
 
 label{
@@ -272,12 +327,6 @@ button.startbtn:hover,
 button.corigbtn:hover {
   background:#5f84fe;
 }
- img{
-  border-radius: 22px;
-  
-  
-}
-
 
 .box{
   padding: 10px 20px;
