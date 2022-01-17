@@ -64,16 +64,12 @@ ul li a:hover {
   background-color: #121212;
 }
 
-body ul li {
-  list-style: none;
-  margin-top: 10px;
-}
-
 p {
   font-size: 55px;
   padding-top: 20px;
   padding-bottom: 20px;
 }
+
 
 .social_link {
   text-align: center;
@@ -97,7 +93,6 @@ p {
 
 .about div p {
   font-size: 28px;
-  
 }
 
 .contact ul {
@@ -117,8 +112,12 @@ p {
 }
 
 footer {
-  background-color: rgba(43, 41, 41, 0.692);
-  height: 130px;
+  background-color: #06d6a0;
+  padding: 16px;
+  font-family: "Rakkas";
   font-size: 20px;
+  color: black;
   margin-top: 60%;
+  padding-left: 40%;
+  align-items: center;
 }
