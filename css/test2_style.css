@@ -75,6 +75,11 @@ ul li a:hover{
   float: left;
   width: 38%;
 }
+.right-col img{
+   margin-right: 50px;
+}
+
+
 .about {
   padding: 10px;
   background-color: #f1f4ffff;
