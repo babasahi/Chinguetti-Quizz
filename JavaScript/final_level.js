@@ -170,7 +170,8 @@ displaybuttons();
 
 }
 
-//ADD A COUNTDOWN
+
+
 let time = 14;
 let quizTimeInMinutes = time * 60 * 60 ;
 quizTime = quizTimeInMinutes / 60 ;
