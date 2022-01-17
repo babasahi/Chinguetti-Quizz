@@ -148,6 +148,12 @@ ul li a:hover {
   width: 380px;
 }
 
+footer{
+  text-align: center;
+   background-color: rgba(43, 41, 41, 0.692);
+   font-size: 110%;
+}
+
 #particles-js {
   width: 90%;
   height: 50%;
