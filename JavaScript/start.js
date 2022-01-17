@@ -4,5 +4,5 @@ function submitForm(e) {
   
     sessionStorage.setItem("name", name);
   
-    location.href="quizz page.html"
+    location.href="first_level.html"
   }
