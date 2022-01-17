@@ -6,6 +6,7 @@ html {
   height: 1000px;
   scroll-behavior: smooth;
   font-family: "Josefin Sans", Arial;
+  color: #fff;
 }
 body {
   margin: 0;
@@ -58,13 +59,15 @@ ul li a:hover{
 /* styling the content of the container*/
 .container {
   margin: 10px;
+  margin-top: 25%;
 }
 .left-col {
   float: right;
   width: 60%;
+ 
 }
 .card {
-  background-color: #f1f4ffff;
+ background-color: #00002a;
   padding: 20px;
 }
 .card img {
@@ -75,25 +78,25 @@ ul li a:hover{
   float: left;
   width: 38%;
 }
-
 .about {
   padding: 10px;
-  background-color: #f1f4ffff;
+background-color: #00002a;
 }
 .post {
   padding: 10px;
-  background-color: #f1f4ffff;
+ background-color: #00002a;
   margin-top: 20px;
 }
 .follow {
   padding: 10px;
-  background-color: #f1f4ffff;
+background-color: #00002a;
   margin-top: 20px;
 }
 .container:after {
   content: "";
   display: table;
   clear: both;
+  
 }
 .fa {
   display: inline-block;
