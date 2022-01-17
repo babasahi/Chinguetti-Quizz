@@ -55,40 +55,6 @@ ul li a:hover{
         text-decoration: underline;
         font-weight: bold;
 }
-table {
-  display: table;
-  border-collapse: separate;
-  box-sizing: border-box;
-  text-indent: initial;
-  border-spacing: 2px;
-  border-color: grey;
-}
-caption.hidden {
-  position: static;
-  text-indent: -5000
-px
-;
-}
-tbody {
-  display: table-row-group;
-  vertical-align: middle;
-  border-color: inherit;
-}
-tr {
-  display: table-row;
-  vertical-align: inherit;
-  border-color: inherit;
-}
-th[scope=row] {
-  text-align: left;
-  padding-right: 10
-px
-;
-  width: 8
-em
-;
-  max-width: 140
-
 
 /* styling the content of the container*/
 .container {
