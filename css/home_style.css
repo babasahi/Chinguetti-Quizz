@@ -111,22 +111,19 @@ b {
   border-radius: 18px;
   width: 520px;
 }
-.Tradition{
+.Tradition {
   padding-top: 100px;
   margin: 24px;
-  margin-bottom: 100px
 }
-.Tradition img{
+.Tradition img {
   margin-left: 70%;
   margin-top: -80%;
   margin-bottom: 5%;
   border-radius: 18px;
   width: 30%;
- 
 }
-.Tradition p{
+.Tradition p {
   margin-right: 42%;
-  font-size: 20px;
 }
 
 footer {
@@ -135,7 +132,7 @@ footer {
   font-family: "Rakkas";
   font-size: 20px;
   color: black;
-  margin-top: 60%;
+  margin-top: 10%;
   padding-left: 40%;
   align-items: center;
 }
