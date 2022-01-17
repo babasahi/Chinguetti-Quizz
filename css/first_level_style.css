@@ -1,9 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@300&family=Poppins:ital,wght@1,200&family=Roboto:ital,wght@0,100;1,300&family=Tajawal:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rakkas&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
 body {
   font-family: "Roboto", sans-serif;
   text-align: center;
-  color: wheat;
-  background: #00002a;
+
+  background: white;
   background-position: center;
   background-size: cover;
 }
@@ -28,24 +35,23 @@ ul {
 }
 ul li {
   display: inline-block;
-  padding: 5px 10px;
-  margin: 0 10px;
-  border-bottom: 2px solid #fff;
+  margin-left: 8px;
+  margin-right: 22px;
 }
 
 ul li a {
-  font-size: 1.1em;
-  color: green;
+  font-size: 28px;
+  color: black;
   text-decoration: none;
-  font-weight: 500;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
+  font-family: "Acme";
+  font-weight: 600;
   transition: 0.3s;
 }
 
 ul li a:hover {
-  color: red;
+  color: blue;
   text-decoration: underline;
-  font-weight: bold;
 }
 
 .form-container {
@@ -53,9 +59,9 @@ ul li a:hover {
   height: auto;
   width: 580px;
   padding: 20px;
-  background: green;
+  background: #06d6a0;
   border-radius: 30px 10px;
-  border: 1px solid #b0c4d8;
+  border: none;
   justify-content: center;
   align-items: center;
   margin-left: 350px;
@@ -70,15 +76,13 @@ ul li a:hover {
 
 .radio-item label {
   display: block;
-  padding: 20px 5px;
-  background: #1d1d42;
-  border: 2px solid rgba(255, 255, 255, 0.1);
-  border-radius: 27px;
+  background-color: #ffb703;
+  padding: 6px 5px;
+  border-radius: 22px;
   cursor: pointer;
-  font-size: 18px;
-  font-weight: 400;
+  font-size: 16px;
+  font-weight: bold;
   min-width: 250px;
-  white-space: nowrap;
   position: relative;
   transition: 0.4s ease-in-out 0s;
 }
@@ -321,7 +325,7 @@ button.corigbtn:hover {
 
 .box {
   padding: 10px 20px;
-  background: white;
+  background: #06d6a0;
   border-radius: 12px;
 }
 .box label {

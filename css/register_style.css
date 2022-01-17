@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rakkas&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Lato";
+  background: url(./assets/images/90.jpg) no-repeat;
+  background-color: white;
+  background: #000;
+}
+header {
+  background-color: #06d6a0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  color: blue;
+  font-size: 58px;
+  font-weight: 100;
+  margin-left: 18px;
+  letter-spacing: 10;
+  font-family: "Rakkas";
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+ul li {
+  display: inline-block;
+  margin-left: 8px;
+  margin-right: 22px;
+}
+
+ul li a {
+  font-size: 28px;
+  color: black;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-family: "Acme";
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+ul li a:hover {
+  color: blue;
+}
+
+.welcome_text {
+  width: 700px;
+  color: black;
+  margin-top: 10%;
+  background: #341f97;
+  margin-left: 25%;
+}
+
+.welcome_form input,
+.welcome_form button {
+  display: block;
+  width: 100%;
+  background-color: #341f97;
+}
+
+.welcome_form input {
+  background-color: transparent;
+  color: black;
+  font-size: 30px;
+  text-align: center;
+  border: none;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 17px;
+}
+
+.welcome_form input:focus {
+  outline: none;
+}
+
+.welcome_form button {
+  padding: 20px 0;
+  border: none;
+  border-radius: 100px;
+  background-color: #fff;
+  color: #341f97;
+  font-size: 22px;
+  transition: 0.4s all;
+}
+
+.welcome_form button:hover {
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+.QUID {
+  margin-top: 8%;
+  height: 250px;
+  width: 400px;
+  padding: 20px;
+  background: green;
+  border-radius: 30px 10px;
+  border: 1px solid #b0c4d8;
+  justify-content: center;
+  align-items: center;
+  margin-left: 37%;
+}
+.rouls {
+  font-size: 25px;
+  color: aqua;
+  font-weight: bold;
+}
+.quide {
+  font-family: "Nixie One";
+  font-size: 15px;
+  margin-top: 20px;
+}
