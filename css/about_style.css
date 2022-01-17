@@ -22,7 +22,7 @@ body {
   background-attachment: fixed;
   background-size: cover;
   font-family: "Poppins", sans-serif;
-  color: green;
+  color: white;
   background-color: black;
 }
 header {
@@ -142,9 +142,9 @@ p {
   padding-top: 20px;
 }
 
-footer p {
-  text-align: center;
-  font-size: 15px;
-  margin-top: 40px;
-  color: black;
+footer{
+  background-color: rgba(43, 41, 41, 0.692);
+  height: 130px;
+  font-size: 20px;
+  margin-top: 60%
 }
