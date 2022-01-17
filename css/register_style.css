@@ -121,3 +121,14 @@ ul li a:hover {
   font-size: 15px;
   margin-top: 20px;
 }
+
+footer {
+  background-color: #06d6a0;
+  padding: 16px;
+  font-family: "Rakkas";
+  font-size: 20px;
+  color: black;
+  margin-top: 60%;
+  padding-left: 40%;
+  align-items: center;
+}

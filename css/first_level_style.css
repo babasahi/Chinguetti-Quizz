@@ -385,3 +385,14 @@ button.passbtn:hover {
   height: 100%;
   padding-left: 30px;
 }
+
+footer {
+  background-color: #06d6a0;
+  padding: 16px;
+  font-family: "Rakkas";
+  font-size: 20px;
+  color: black;
+  margin-top: 60%;
+  padding-left: 40%;
+  align-items: center;
+}
