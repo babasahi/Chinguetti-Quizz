@@ -15,7 +15,10 @@
 body {
   font-family: "Poppins", sans-serif;
   color: white;
- 
+ background: url(../assets/images/0bd6ce07-f521-4eaf-b363-77d07a80acc9.jfif) no-repeat;
+ background-position: left;
+ background-color: #121212;
+ background-size: 520px;
 }
 
 header {
