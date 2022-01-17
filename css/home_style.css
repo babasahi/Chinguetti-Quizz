@@ -121,3 +121,9 @@ b {
   margin: 50px;
   font-size: 20px;
 }
+
+footer{
+   background-color: rgba(43, 41, 41, 0.692);
+   height: 130px;
+   font-size: 20px;
+}
