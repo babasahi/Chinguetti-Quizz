@@ -14,6 +14,7 @@ body {
   font-family: "Lato";
   background: url(./assets/images/90.jpg) no-repeat;
   background-color: white;
+  background: #000;
 }
 header {
   background-color: #06d6a0;
@@ -55,15 +56,17 @@ ul li a:hover {
 }
 
 .welcome_text {
-  width: 400px;
+  width: 700px;
   color: black;
+  margin-top: 10%;
+  background: #341f97;
+  margin-left: 25%;
 }
 
 .welcome_form input,
 .welcome_form button {
   display: block;
   width: 100%;
-  margin-left: 70%;
   background-color: #341f97;
 }
 
@@ -97,7 +100,7 @@ ul li a:hover {
   cursor: pointer;
 }
 .QUID {
-  margin-top: 0%;
+  margin-top: 8%;
   height: 250px;
   width: 400px;
   padding: 20px;
@@ -106,7 +109,7 @@ ul li a:hover {
   border: 1px solid #b0c4d8;
   justify-content: center;
   align-items: center;
-  margin-left: 820px;
+  margin-left: 37%;
 }
 .rouls {
   font-size: 25px;
