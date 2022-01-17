@@ -101,7 +101,7 @@ ul li a:hover {
 
 .banner {
   display: flex;
-  margin-top: 4px;
+
   justify-content: space-around;
   flex-wrap: wrap;
 }
@@ -119,20 +119,19 @@ ul li a:hover {
 }
 
 .banner .intro .buttons {
-  margin: 2rem 0;
-  margin-left: 70px;
+  margin-top: 12px;
+  margin-bottom: 22px;
   justify-content: space-evenly;
 }
 
 .banner .intro .buttons .button {
   color: black;
   background-color: #06d6a0;
-  padding: 10px;
-  font-size: 18px;
-  font-weight: bold;
+  padding: 6px;
+  font-size: 16px;
   font-family: "Acme";
   border: none;
-  border-radius: 12px;
+  border-radius: 8px;
 }
 
 .banner .intro p {
