@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rakkas&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 :root {
   --primary: #ff4c29;
 }
@@ -31,7 +33,8 @@ body {
 }
 
 header {
-  background-color: #9ef01a;
+  /* background-color: #9ef01a; */
+  background-color: #06d6a0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -98,11 +101,9 @@ ul li a:hover {
 
 .banner {
   display: flex;
-  margin-top: 2rem;
-
+  margin-top: 4px;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin-left: 0px;
 }
 
 .banner .intro {
@@ -110,31 +111,28 @@ ul li a:hover {
 }
 
 .banner .intro h1 {
-  text-transform: capitalize;
-
-  color: #fff;
-  margin-left: 70px;
-}
-
-.banner .intro h1 span {
-  color: var(--primary);
-  border-bottom: 3px solid blue;
-  font-family: "Acme";
+  margin-right: 800px;
+  font-family: "Mochiy Pop P One";
   color: black;
-  font-size: 42px;
+  font-weight: normal;
+  font-size: 52px;
 }
 
 .banner .intro .buttons {
   margin: 2rem 0;
   margin-left: 70px;
+  justify-content: space-evenly;
 }
 
-.banner .intro .buttons .btn {
-  margin: 0;
-}
-
-.banner .intro .buttons .btn:nth-child(2) {
-  margin: 0 1rem;
+.banner .intro .buttons .button {
+  color: black;
+  background-color: #06d6a0;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Acme";
+  border: none;
+  border-radius: 12px;
 }
 
 .banner .intro p {
@@ -146,8 +144,6 @@ ul li a:hover {
 .banner .right {
   width: 380px;
 }
-
-/* ---- particles.js container ---- */
 
 #particles-js {
   width: 90%;
