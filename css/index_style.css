@@ -151,7 +151,10 @@ ul li a:hover {
 footer{
   margin-top: 30%;
    background-color: rgba(43, 41, 41, 0.692);
-   font-size: 30px;
+   height: 500px;
+}
+footer p{
+      font-size: 20px;
 }
 
 #particles-js {
