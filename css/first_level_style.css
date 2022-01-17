@@ -129,9 +129,11 @@ label {
 
 .panel {
   background: rgba(0, 0, 0, 0.2);
+  background-color: #06d6a0;
 }
 .panel-heading {
   margin-bottom: 20px;
+  background-color: #06d6a0;
 }
 
 .btn-group {
