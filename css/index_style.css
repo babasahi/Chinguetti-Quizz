@@ -29,12 +29,10 @@ body {
   z-index: -1;
   content: "";
   position: absolute;
-  /* background: url(../assets/images/90.jpg) no-repeat; */
   background-color: white;
 }
 
 header {
-  /* background-color: #9ef01a; */
   background-color: #06d6a0;
   display: flex;
   justify-content: space-between;
