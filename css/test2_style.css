@@ -58,6 +58,7 @@ ul li a:hover{
 /* styling the content of the container*/
 .container {
   margin: 10px;
+  margin-top: 25%;
 }
 .left-col {
   float: right;
