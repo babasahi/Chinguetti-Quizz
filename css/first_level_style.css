@@ -1,82 +1,78 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@300&family=Poppins:ital,wght@1,200&family=Roboto:ital,wght@0,100;1,300&family=Tajawal:wght@500&display=swap');
-  body {
-  font-family: 'Roboto', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@300&family=Poppins:ital,wght@1,200&family=Roboto:ital,wght@0,100;1,300&family=Tajawal:wght@500&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
   text-align: center;
   color: wheat;
-  background:#00002a;
+  background: #00002a;
   background-position: center;
   background-size: cover;
 }
-header{
-    background-color:#00002a;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 20px;
+header {
+  background-color: #06d6a0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .logo {
-    border: 2px solid red;
-    border-radius: 5px;
-    padding: 5px 10px;
-    color: yellow;
-    font-size: 1.5em;
-    font-weight: 400;
-    margin-left: 50px;
-    font-family: 'Tajawal', sans-serif;
-    letter-spacing: 2px;
-    cursor: pointer;
+  color: blue;
+  font-size: 58px;
+  font-weight: 100;
+  margin-left: 18px;
+  letter-spacing: 10;
+  font-family: "Rakkas";
+  cursor: pointer;
 }
 
-ul{
-    list-style: none;
+ul {
+  list-style: none;
 }
 ul li {
-    display: inline-block;
-    padding: 5px 10px;
-    margin: 0 10px; 
-    border-bottom: 2px solid #fff;
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 0 10px;
+  border-bottom: 2px solid #fff;
 }
 
 ul li a {
-    font-size: 1.1em;
-    color:green;
-    text-decoration: none;
-    font-weight: 500;
-    letter-spacing: 2px;
-    transition: .3s;
+  font-size: 1.1em;
+  color: green;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 2px;
+  transition: 0.3s;
 }
 
-ul li a:hover{
-        color: red;
-        text-decoration: underline;
-        font-weight: bold;
+ul li a:hover {
+  color: red;
+  text-decoration: underline;
+  font-weight: bold;
 }
 
 .form-container {
-    margin-top: 5%;
-    height: auto;
-    width: 580px;
-    padding: 20px;
-    background: green;
-    border-radius: 30px 10px;
-    border: 1px solid #b0c4d8;
-    justify-content: center;
-    align-items: center;
-    margin-left: 350px;
+  margin-top: 5%;
+  height: auto;
+  width: 580px;
+  padding: 20px;
+  background: green;
+  border-radius: 30px 10px;
+  border: 1px solid #b0c4d8;
+  justify-content: center;
+  align-items: center;
+  margin-left: 350px;
 }
 
 .radio-item [type="radio"] {
-     display: none;
+  display: none;
 }
 .radio-item + .radio-item {
-    margin-top: 15px;
+  margin-top: 15px;
 }
 
 .radio-item label {
   display: block;
   padding: 20px 5px;
   background: #1d1d42;
-  border: 2px solid rgba(255,255,255,0.1);
+  border: 2px solid rgba(255, 255, 255, 0.1);
   border-radius: 27px;
   cursor: pointer;
   font-size: 18px;
@@ -84,8 +80,7 @@ ul li a:hover{
   min-width: 250px;
   white-space: nowrap;
   position: relative;
-  transition: .4s ease-in-out 0s;
-
+  transition: 0.4s ease-in-out 0s;
 }
 .radio-item label:after,
 .radio-item label:before {
@@ -100,7 +95,7 @@ ul li a:hover{
   left: 20px;
   top: calc(50% - 12px);
 }
-.radio-item label:before{
+.radio-item label:before {
   background: #524eee;
   height: 10px;
   width: 10px;
@@ -109,93 +104,84 @@ ul li a:hover{
   transform: scale(5);
   opacity: 0;
   visibility: hidden;
-  transition: .4s ease-in-out 0s;
+  transition: 0.4s ease-in-out 0s;
 }
-.radio-item [type='radio']:checked ~ label {
+.radio-item [type="radio"]:checked ~ label {
   border-color: #524eee;
 }
-.radio-item [type='radio']:checked ~ label:before {
+.radio-item [type="radio"]:checked ~ label:before {
   opacity: 1;
   visibility: visible;
   transform: scale(1);
 }
 
-
-label{
- 
+label {
   margin: 2px;
   vertical-align: middle;
   display: inline-flex;
   justify-content: center;
   align-items: center;
-
-  
 }
 
+.panel {
+  background: rgba(0, 0, 0, 0.2);
+}
+.panel-heading {
+  margin-bottom: 20px;
+}
 
-  .panel {
-    background: rgba(0,0,0,.2);
-
-    }
-    .panel-heading {
-      margin-bottom: 20px;
-    }
-  
-  .btn-group {
-    width: 100%;
-    margin: 0 auto 10px auto;
-  }
-  .back {
-    height: 50px;
-    width: 120px;
-    margin: 10px 25px;
-    border: none;
-    outline: none;
-    color: #e7f1fa;
-    background: #ff5235;
-    border: 1px solid #b0c4d8;
-    border-radius: 20px 5px;
-    font-size: 18px;
-    cursor: pointer;
-    margin-right:70%;
-    
-  }
-  #clear {
-    border: none;
-    outline: none;
-    color: #e7f1fa;
-    background: #ff5235;
-    font-size: 18px;
-    cursor: pointer;
-  }
-  
+.btn-group {
+  width: 100%;
+  margin: 0 auto 10px auto;
+}
+.back {
+  height: 50px;
+  width: 120px;
+  margin: 10px 25px;
+  border: none;
+  outline: none;
+  color: #e7f1fa;
+  background: #ff5235;
+  border: 1px solid #b0c4d8;
+  border-radius: 20px 5px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-right: 70%;
+}
+#clear {
+  border: none;
+  outline: none;
+  color: #e7f1fa;
+  background: #ff5235;
+  font-size: 18px;
+  cursor: pointer;
+}
 
 .continue {
-    height: 50px;
-    width: 120px;
-    margin: 10px 25px;
-    border: none;
-    outline: none;
-    color: #e7f1fa;
-    background: #ff5235;
-    border: 1px solid #b0c4d8;
-    border-radius: 20px 5px;
-    font-size: 18px;
-    cursor: pointer;
-    margin-left:70%;
+  height: 50px;
+  width: 120px;
+  margin: 10px 25px;
+  border: none;
+  outline: none;
+  color: #e7f1fa;
+  background: #ff5235;
+  border: 1px solid #b0c4d8;
+  border-radius: 20px 5px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-left: 70%;
 }
-.continue
- .back:last-child {
-    margin: 10px 0;
+.continue .back:last-child {
+  margin: 10px 0;
 }
 .continue,
- .back:hover,
- #clear:hover{
-    background: #e91e3a;
+.back:hover,
+#clear:hover {
+  background: #e91e3a;
 }
 
 /* Multi-Part CSS */
-input[type=checkbox] {
+input[type="checkbox"] {
   position: absolute;
   /* Position the checkbox in upper left corner */
   opacity: 0;
@@ -205,11 +191,11 @@ input[type=checkbox] {
 #part1,
 #part2,
 #part3,
-#part4, 
+#part4,
 #part5,
 #part6,
 #part7,
-#part8{
+#part8 {
   z-index: 2;
   display: block;
   height: auto;
@@ -221,7 +207,7 @@ input[type=checkbox] {
 
 #part2,
 #part3,
-#part4, 
+#part4,
 #part5,
 #part6,
 #part7,
@@ -292,58 +278,53 @@ input[type=checkbox] {
   height: 0;
 }
 
-
-
-
-button.validebtn{
-    height: 50px;
-    width: 120px;
-    margin: 10px 25px;
-    border: none;
-    outline: none;
-    border: 1px solid #b0c4d8;
-    border-radius: 20px 5px;
-    font-size: 18px;
-    cursor: pointer;
-    margin-left:70%;
-    background: green;
-    color: #fff;
- 
+button.validebtn {
+  height: 50px;
+  width: 120px;
+  margin: 10px 25px;
+  border: none;
+  outline: none;
+  border: 1px solid #b0c4d8;
+  border-radius: 20px 5px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-left: 70%;
+  background: green;
+  color: #fff;
 }
 button.validebtn:hover {
-  background:#5f84fe;
+  background: #5f84fe;
 }
 button.startbtn,
-button.corigbtn{
-    height: 50px;
-    width: 120px;
-    margin: 10px 25px;
-    border: none;
-    outline: none;
-    border: 1px solid #b0c4d8;
-    border-radius: 20px 5px;
-    font-size: 18px;
-    cursor: pointer;
-    background: green;
-    color: #fff;
+button.corigbtn {
+  height: 50px;
+  width: 120px;
+  margin: 10px 25px;
+  border: none;
+  outline: none;
+  border: 1px solid #b0c4d8;
+  border-radius: 20px 5px;
+  font-size: 18px;
+  cursor: pointer;
+  background: green;
+  color: #fff;
 }
-button.startbtn{
-    margin-right: 70%px;
-    margin-top:30px;
+button.startbtn {
+  margin-right: 70%px;
+  margin-top: 30px;
 }
 
 button.startbtn:hover,
 button.corigbtn:hover {
-  background:#5f84fe;
+  background: #5f84fe;
 }
 
-.box{
+.box {
   padding: 10px 20px;
   background: white;
   border-radius: 12px;
-  
 }
- .box label{
+.box label {
   display: flex;
   height: 53px;
   width: 100%;
@@ -356,44 +337,42 @@ button.corigbtn:hover {
   transition: all 0.3s ease;
 }
 
-
- 
-
-button.passbtn{
-			margin-top: 15px;
-			background: yellow;
-			padding: 14px 50px;
-			border-radius: 50px;
-			color: #000;
-      font-size: 20px;
-			cursor: pointer;
-      font-weight: bold;
-		}
+button.passbtn {
+  margin-top: 15px;
+  background: yellow;
+  padding: 14px 50px;
+  border-radius: 50px;
+  color: #000;
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
 
 button.passbtn:hover {
-  background:#5f84fe;
+  background: #5f84fe;
 }
 .waviy {
   position: relative;
-  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0, 0, 0, 0.2));
   font-size: 40px;
 }
 .waviy span {
-  font-family: 'Alfa Slab One', cursive;
+  font-family: "Alfa Slab One", cursive;
   position: relative;
   display: inline-block;
   color: #fff;
   text-transform: uppercase;
   animation: waviy 1s infinite;
-  animation-delay: calc(.1s * var(--i));
-  
+  animation-delay: calc(0.1s * var(--i));
 }
 @keyframes waviy {
-  0%,40%,100% {
-    transform: translateY(0)
+  0%,
+  40%,
+  100% {
+    transform: translateY(0);
   }
   20% {
-    transform: translateY(-20px)
+    transform: translateY(-20px);
   }
 }
 .quiz_user {
@@ -402,6 +381,3 @@ button.passbtn:hover {
   height: 100%;
   padding-left: 30px;
 }
-
-
-
