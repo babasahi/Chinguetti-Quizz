@@ -70,28 +70,30 @@ p {
   padding-bottom: 20px;
 }
 
+
 #center_content {
-  padding-left: 20px;
+  padding-left: 60px;
 }
 
 
 .info_div {
+position: fixed;
 width: 35%;
 height: 100%;
 overflow: hidden;
 }
 
-
 .social_link {
 text-align: center;
-margin-top: 0px;
- font-size: 25px;
+margin-top: 70px;
+    font-size: 25px;
 }
 .social_link a {
 margin: 0 40px 0 0;
 }
 
 .main_content {
+position: relative;
 width: 64%;
 height: 100%;
 Float: right
@@ -100,11 +102,11 @@ Float: right
 
 
 .about h3 {
-padding-top: 11px;
+padding-top: 110px;
 }
 
 .about div {
-height: 24px;
+height: 100%;
 width: 90%;
 border-radius:0.5em;
 background-color: #121212;
@@ -115,8 +117,11 @@ font-size: 20px;
 margin: 20px 20px 20px 20px;
 }
 
+
+
+
 .contact ul {
-height: 25px;
+height: 100%;
 width: 30%;
 border-radius:0.5em;
 background-color: #121212;
@@ -136,7 +141,6 @@ margin: 20px 20px 20px 20px;
 
 footer {
   background-color: #06d6a0;
- 
   font-family: "Rakkas";
   font-size: 20px;
   color: black;
@@ -144,6 +148,10 @@ footer {
   padding-left: 40%;
   align-items: center;
 }
+
+
+
+
 
 
 
