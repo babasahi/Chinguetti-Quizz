@@ -101,7 +101,6 @@ ul li a:hover {
 
 .banner {
   display: flex;
-  margin-left: 50%;
   justify-content: space-around;
   flex-wrap: wrap;
 }
