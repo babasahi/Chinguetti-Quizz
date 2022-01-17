@@ -15,7 +15,7 @@
 body {
   font-family: "Poppins", sans-serif;
   color: white;
-  background-color: white;
+  background-color:black;
 }
 
 header {
@@ -70,45 +70,69 @@ p {
   padding-bottom: 20px;
 }
 
+#center_content {
+  padding-left: 20px;
+}
+
+
+.info_div {
+width: 35%;
+height: 100%;
+overflow: hidden;
+}
+
+
 .social_link {
-  text-align: center;
-  margin-top: 70px;
-  font-size: 25px;
+text-align: center;
+margin-top: 0px;
+ font-size: 25px;
 }
 .social_link a {
-  margin: 0 40px 0 0;
+margin: 0 40px 0 0;
 }
 
 .main_content {
-  position: relative;
-  width: 64%;
-  height: 100%;
-  float: right;
+width: 64%;
+height: 100%;
+Float: right
+
+}
+
+
+.about h3 {
+padding-top: 11px;
 }
 
 .about div {
-  color: black;
+height: 24px;
+width: 90%;
+border-radius:0.5em;
+background-color: #121212;
 }
 
 .about div p {
-  font-size: 28px;
+font-size: 20px;
+margin: 20px 20px 20px 20px;
 }
 
 .contact ul {
-  height: 100%;
-  width: 30%;
-  border-radius: 0.5em;
-  background-color: #121212;
-  padding-bottom: 5px;
+height: 25px;
+width: 30%;
+border-radius:0.5em;
+background-color: #121212;
+ padding-bottom: 5px;
+
 }
 
 .contact ul li {
-  font-size: 20px;
-  margin: 20px 20px 20px 20px;
+font-size: 20px;
+margin: 20px 20px 20px 20px;
+
 }
 .contact ul li:first-child {
-  padding-top: 20px;
+    padding-top: 20px;
 }
+
 
 footer {
   background-color: #06d6a0;
@@ -120,3 +144,90 @@ footer {
   padding-left: 40%;
   align-items: center;
 }
+
+
+
+
+
+
+#center_content {
+    padding-left: 60px;
+}
+
+
+.info_div {
+ position: fixed;
+ width: 35%;
+ height: 100%;
+ overflow: hidden;
+}
+
+
+
+.icon {
+  margin-top: 25px;
+  margin-left: 30px;
+}
+
+.icon ul li i {
+  text-shadow: 1px 1px 1px #ccc;
+  font-size: 20px;
+  padding-right:10px;
+}
+
+.icon ul li a {
+   font-size: 20px;
+}
+
+.social_link {
+  text-align: center;
+  margin-top: 70px;
+      font-size: 25px;
+}
+.social_link a {
+ margin: 0 40px 0 0;
+}
+
+.main_content {
+  position: relative;
+  width: 64%;
+  height: 100%;
+  Float: right
+  
+}
+
+
+.about h3 {
+  padding-top: 110px;
+}
+
+.about div {
+  height: 100%;
+  width: 90%;
+  border-radius:0.5em;
+  background-color: #121212;
+}
+
+.about div p {
+  font-size: 20px;
+  margin: 20px 20px 20px 20px;
+}
+
+.contact ul {
+  height: 100%;
+  width: 30%;
+  border-radius:0.5em;
+  background-color: #121212;
+   padding-bottom: 5px;
+
+}
+
+.contact ul li {
+  font-size: 20px;
+  margin: 20px 20px 20px 20px;
+  
+}
+.contact ul li:first-child {
+      padding-top: 20px;
+}
+
