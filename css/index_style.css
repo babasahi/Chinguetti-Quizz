@@ -101,7 +101,6 @@ ul li a:hover {
 
 .banner {
   display: flex;
-  margin-left: 50%;
   justify-content: space-around;
   flex-wrap: wrap;
 }
@@ -137,7 +136,7 @@ ul li a:hover {
 .banner .intro p {
   color: #999;
   font-size: 14px;
-  margin-left: 70px;
+  margin-left: 70%;
 }
 
 .banner .right {
