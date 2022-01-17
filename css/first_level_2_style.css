@@ -119,6 +119,48 @@ header ul li a:hover{
     background: green;
     color : #f6f6f6;
 }
+.Q4{
+width: 470px;
+display: inline-block;
+padding: 10px 0 10px 5px;
+vertical-align: middle;
+background: rgba(255,255,255,0.5);
+margin: 20px 0 10px 10px;
+color: #000000;
+border-radius: 20px;
+}
+.Q4:hover{
+    background: green;
+    color : #f6f6f6;
+}
+.Q5{
+    width: 470px;
+    display: inline-block;
+    padding: 10px 0 10px 5px;
+    vertical-align: middle;
+    background: rgba(255,255,255,0.5);
+    margin: 20px 0 10px 10px;
+    color: #000000;
+    border-radius: 20px; 
+}
+.Q5:hover{
+    background: green;
+    color : #f6f6f6;
+}
+.Q6{
+    width: 470px;
+    display: inline-block;
+    padding: 10px 0 10px 5px;
+    vertical-align: middle;
+    background: rgba(255,255,255,0.5);
+    margin: 20px 0 10px 10px;
+    color: #000000;
+    border-radius: 20px; 
+}
+.Q6:hover{
+    background: green;
+    color : #f6f6f6;
+}
 .vali-der{
 
     background: blue;
