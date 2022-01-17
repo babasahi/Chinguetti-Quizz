@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Rakkas&display=swap");
+
+body {
+  background-image: url(https://media.istockphoto.com/vectors/large-group-of-people-are-standing-in-green-yellow-and-red-robes-the-vector-id1314301529?k=20&m=1314301529&s=612x612&w=0&h=B7Idg_meePEVxsf4Gi_Kv6AnuERbJc5xv38F5bu6EZ8=);
+  background-position-x: center;
+  background-position-y: top;
+  background-repeat: no-repeat;
+  background-color: white;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background-color: #06d6a0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  color: blue;
+  font-size: 58px;
+  font-weight: 100;
+  margin-left: 18px;
+  letter-spacing: 10;
+  font-family: "Rakkas";
+  cursor: pointer;
+}
+
+header ul {
+  list-style: none;
+}
+header ul li {
+  display: inline-block;
+  margin-left: 8px;
+  margin-right: 22px;
+}
+
+header ul li a {
+  font-size: 28px;
+  color: black;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-family: "Acme";
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+header ul li a:hover {
+  color: red;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+b {
+  background-color: white;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.traditions p {
+  margin-top: 280px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-style: normal;
+  font-size: 20px;
+  text-align: left;
+}
+.Economie p {
+  margin: 50px;
+  font-style: normal;
+  font-size: 20px;
+  text-align: left;
+}
+.his p {
+  margin: 50px;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.traditions img {
+  padding: 50px;
+}
+.social p {
+  margin: 50px;
+  font-style: normal;
+  font-size: 20px;
+}
+.tourisme p {
+  margin: 50px;
+  font-size: 20px;
+}
+.ad {
+  margin: 20px;
+}
