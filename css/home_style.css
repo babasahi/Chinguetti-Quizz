@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Rakkas&display=swap");
-
 @import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap");
 
 body {
-  background-image: url(https://media.istockphoto.com/vectors/large-group-of-people-are-standing-in-green-yellow-and-red-robes-the-vector-id1314301529?k=20&m=1314301529&s=612x612&w=0&h=B7Idg_meePEVxsf4Gi_Kv6AnuERbJc5xv38F5bu6EZ8=);
+  /* background-image: url(https://media.istockphoto.com/vectors/large-group-of-people-are-standing-in-green-yellow-and-red-robes-the-vector-id1314301529?k=20&m=1314301529&s=612x612&w=0&h=B7Idg_meePEVxsf4Gi_Kv6AnuERbJc5xv38F5bu6EZ8=);
+  */
   background-position-x: center;
   background-position-y: top;
   background-repeat: no-repeat;
@@ -50,8 +51,7 @@ header ul li a {
 }
 
 header ul li a:hover {
-  color: red;
-  text-decoration: underline;
+  color: blue;
   font-weight: bold;
 }
 
@@ -60,29 +60,58 @@ b {
   font-family: "Courier New", Courier, monospace;
 }
 
-.traditions p {
-  margin-top: 280px;
+.title {
+  font-size: 32px;
+  font-family: "Acme";
+}
+.text {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Roboto Slab";
+}
+.mauritania {
+  padding-top: 8%;
+}
+.mauritania h2 {
+  margin-left: 42%;
+}
+.mauritania p {
+  margin-left: 42%;
+}
+.mauritania img {
   margin-left: 20px;
-  margin-right: 20px;
-  font-style: normal;
-  font-size: 20px;
-  text-align: left;
+  margin-top: -18%;
+  border-radius: 18px;
 }
-.Economie p {
-  margin: 50px;
-  font-style: normal;
-  font-size: 20px;
-  text-align: left;
-}
-.his p {
-  margin: 50px;
-  font-style: normal;
-  font-size: 20px;
+.Economy {
+  padding-top: 100px;
+  margin: 24px;
+  margin-bottom: 100px;
 }
 
-.traditions img {
-  padding: 50px;
+.Economy p {
+  margin-right: 45%;
+  padding-top: 12px;
 }
+.Economy img {
+  margin-left: 60%;
+  margin-top: -24%;
+  border-radius: 18px;
+}
+
+.history p {
+  margin-left: 42%;
+}
+.history h2 {
+  margin-left: 42%;
+}
+
+.history img {
+  margin-top: -22%;
+  border-radius: 18px;
+  width: 520px;
+}
+
 .social p {
   margin: 50px;
   font-style: normal;
@@ -91,7 +120,4 @@ b {
 .tourisme p {
   margin: 50px;
   font-size: 20px;
-}
-.ad {
-  margin: 20px;
 }
