@@ -76,14 +76,13 @@ ul li a:hover {
 
 .radio-item label {
   display: block;
+  background-color: #ffb703;
   padding: 6px 5px;
   border-radius: 22px;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
-  font-weight: 400;
   min-width: 250px;
-  white-space: nowrap;
   position: relative;
   transition: 0.4s ease-in-out 0s;
 }
