@@ -149,15 +149,17 @@ ul li a:hover {
 }
 
 footer{
-  margin-top: 30%;
+  margin-top: 25%;
    background-color: rgba(43, 41, 41, 0.692);
-   font-size: 30px;
+   height: 150px;
+}
+footer p{
+      font-size: 20px;
 }
 
 #particles-js {
   width: 90%;
   height: 50%;
-  background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
