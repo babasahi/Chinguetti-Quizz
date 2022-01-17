@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 :root {
   --primary: #ff4c29;
 }
@@ -134,9 +135,13 @@ ul li a:hover {
 }
 
 .banner .intro p {
-  color: #999;
-  font-size: 14px;
-  margin-left: 70%;
+  color: black;
+  font-size: 28px;
+  font-family: "Pacifico";
+  /* color: #80ffdb; */
+  margin-left: 50%;
+  margin-top: -12%;
+  margin-bottom: 20px;
 }
 
 .banner .right {
