@@ -129,9 +129,11 @@ label {
 
 .panel {
   background: rgba(0, 0, 0, 0.2);
+  background-color: #06d6a0;
 }
 .panel-heading {
   margin-bottom: 20px;
+  background-color: #06d6a0;
 }
 
 .btn-group {
@@ -384,4 +386,15 @@ button.passbtn:hover {
   align-items: center;
   height: 100%;
   padding-left: 30px;
+}
+
+footer {
+  background-color: #06d6a0;
+  padding: 16px;
+  font-family: "Rakkas";
+  font-size: 20px;
+  color: black;
+  margin-top: 60%;
+  padding-left: 40%;
+  align-items: center;
 }
