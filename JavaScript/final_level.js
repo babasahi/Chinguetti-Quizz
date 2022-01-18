@@ -195,4 +195,11 @@ function startCountdown() {
   }, 1000)
 }
 startCountdown();
-  
+   
+
+function Quite() {
+    location.href="home.html"
+}
+function tryagain() {
+    location.href="register.html"
+}

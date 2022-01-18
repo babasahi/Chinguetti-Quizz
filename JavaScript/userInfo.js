@@ -8,3 +8,4 @@ document.getElementById("name").innerHTML = user_name;
 document.getElementById("totaleqsm").innerHTML = user_totaleqsm ;
 document.getElementById("points").innerHTML = user_points;
 document.getElementById("Non").innerHTML = user_noncheck ;
+
