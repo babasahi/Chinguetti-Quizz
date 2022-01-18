@@ -55,7 +55,7 @@ ul li a:hover {
 }
 
 .form-container {
-  margin-top: 5%;
+  margin-top: -1%;
   height: auto;
   width: 580px;
   padding: 20px;
@@ -343,16 +343,25 @@ button.corigbtn:hover {
   transition: all 0.3s ease;
 }
 
-button.passbtn {
-  margin-top: 15px;
-  background: yellow;
-  padding: 14px 50px;
-  border-radius: 50px;
-  color: #000;
-  font-size: 20px;
+  button.passbtn {
+  margin-left: 70px;
+  border: none;
+  background: #edc371;
+  padding: 20px;
+  width: 25%;
+  background: black;
+  color: #fff;
+  font-size: 1rem;
+  margin: 7px 3px;
   cursor: pointer;
-  font-weight: bold;
+  outline: none;
+  margin-bottom: 10px;
+  transition: background 0.3s ease-in-out;
+  box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.3);
+
 }
+
+
 
 button.passbtn:hover {
   background: #5f84fe;
@@ -366,7 +375,7 @@ button.passbtn:hover {
   font-family: "Alfa Slab One", cursive;
   position: relative;
   display: inline-block;
-  color: #fff;
+  color: #000;
   text-transform: uppercase;
   animation: waviy 1s infinite;
   animation-delay: calc(0.1s * var(--i));
@@ -394,7 +403,7 @@ footer {
   font-family: "Rakkas";
   font-size: 20px;
   color: black;
-  margin-top: 60%;
+  margin-top: 5%;
   padding-left: 40%;
   align-items: center;
 }
