@@ -104,7 +104,7 @@ if(input[i].type == 'radio' && !input[i].checked)
 if(compteur == 21)
 {       let answer;
 do
-answer = prompt("Quelle question n'a aucune reponse",'entre 1 et 4 ');
+answer = prompt("What question has no answer",'between 1 and 7');
 while(isNaN(answer) || ( answer > 4) || (answer < 1));
 if(answer == 2) {score+=2;
 alert(" Score:"+score + "\n" + "tq" + Totale + "\n" + "QR"+check + "\n" + "noncked"+Totale );
@@ -204,7 +204,7 @@ else score+=0;
 
 }
 sessionStorage.setItem("points", score);
-alert("SCORE : "+score + "Rnp" +nonchecked);
+alert("Score : "+score + "Unanswered questions" +nonchecked);
 displaybuttons();
 
 }
