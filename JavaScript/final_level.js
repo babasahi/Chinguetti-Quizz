@@ -80,10 +80,10 @@ if(compteur == 12)
     answer = prompt("Quelle question n'a aucune reponse",'entre 1 et 4 ');
      while(isNaN(answer) || ( answer > 4) || (answer < 1));
     if(answer == 2) {score+=2;
-        alert("FUCK YOU GO TO YOUR RSULTS " );
+        alert("Go to to results page" );
      }
      else {
-        alert(" FUCK YOU GO TO YOUR RSULTS ");
+        alert("Go to to results page");
         location.href="results.html"
      }
      sessionStorage.setItem("points", score);
