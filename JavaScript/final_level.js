@@ -157,7 +157,7 @@ location.href="results.html"
 
 
 
-let time = 14;
+let time = 1;
 let quizTimeInMinutes = time * 60 * 60 ;
 quizTime = quizTimeInMinutes / 60 ;
 

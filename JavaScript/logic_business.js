@@ -90,7 +90,7 @@ let questions = [
 
 
 
-function result(){
+      function result(){
 
     let nonchecked = 7;
 
@@ -122,7 +122,7 @@ displaybuttons();
 return ;
 }
 
-else if((compteur >=3 && compteur<=6))
+ if((compteur >=3 && compteur<=6))
 nonchecked-=5;
 else if((compteur >6 && compteur<=9) )
 nonchecked-=4;
@@ -206,5 +206,11 @@ else score+=0;
 alert( "Score : "+score + "\n" + "Total Questions : "+Totale
 + "\n" + "Unanswered questions :" +nonchecked  );
 displaybuttons();
+
+
+
+
+
+
 
 }
