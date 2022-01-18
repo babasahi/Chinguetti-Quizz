@@ -5,7 +5,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
 body {
   font-family: "Roboto", sans-serif;
   text-align: center;
@@ -334,29 +334,24 @@ img {
 #option-3333:checked ~ .option-3333 .text {
   color: #fff;
 }
+
 .box input[type="radio"] {
   display: none;
 }
+
 #time {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100%;
   width: 100px;
-  background-color: #341f97;
-  color: #fff;
-  margin-left: 42%;
-  border-radius: 50%;
-  padding: 15px 30px;
-}
-
-footer {
-  background-color: #06d6a0;
-  padding: 16px;
-  font-family: "Rakkas";
-  font-size: 20px;
   color: black;
-  margin-top: 10%;
-  padding-left: 40%;
-  align-items: center;
+  font-size: 28px;
+  font-family: "Alfa Slab One";
+  font-weight: normal;
+  border: 2px solid black;
+  margin-top: 12px;
+  margin-left: 42%;
+  border-radius: 8px;
+  padding: 12px;
 }

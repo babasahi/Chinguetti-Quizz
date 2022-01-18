@@ -4,7 +4,6 @@ body {
   margin: 0px;
   height: 100%;
   width: 100%;
-  font-family: "Nixie One";
   color: #242830;
   background-color: #000a;
 }
@@ -93,13 +92,4 @@ button:focus {
   outline: none;
 }
 
-footer {
-  background-color: #06d6a0;
-  padding: 16px;
-  font-family: "Rakkas";
-  font-size: 20px;
-  color: black;
-  margin-top: 60%;
-  padding-left: 40%;
-  align-items: center;
-}
+
