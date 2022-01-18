@@ -155,7 +155,7 @@ for(i=0;i<questions.length;i++)
 
 }
 sessionStorage.setItem("points", score);
-alert("Go to results page");
+alert("Goto to results page");
 displaybuttons();
 location.href="results.html"
 
