@@ -1,13 +1,13 @@
 
         let input = document.getElementsByTagName('input');
         const form = document.getElementById('form');
+
         let compteur = 0;
         let score=0;
-        let vrai = 0;
         let nonchecked = 4;
-        let check = 0;
         let Totale = 4 ;
-        let v = 0 ;
+        sessionStorage.setItem("TotalQeustion", Totale);
+
 function reload()
 {
     location.reload();
@@ -34,7 +34,7 @@ valider.disabled=true;
 
 
 
-       let Q=document.getElementsByClassName('hamade');
+       let Q=document.getElementsByName('Q1');
        let Q1=document.getElementsByName('Q2');
        let Q2=document.getElementsByName('Q3');
        let Q3=document.getElementsByName('Q4');
@@ -44,7 +44,7 @@ valider.disabled=true;
 let questions = [ 
     {
         "choix" : Q,
-        "reponse" : [0,2]
+        "reponse" : 0
     },
     {
         "choix" : Q1,
@@ -85,7 +85,10 @@ if(compteur == 12)
      else {
         alert(" Score: "+score );
      }
+     sessionStorage.setItem("points", score);
+     sessionStorage.setItem("nocheck", nonchecked);
      displaybuttons();
+     location.href="first_level.html"
      return ;
 }
   if(compteur >3 && compteur<=6)
@@ -95,7 +98,7 @@ if(compteur == 12)
    if(compteur > 9 && compteur<12)
    nonchecked-=1;
    
-   check = Totale-nonchecked ;
+   sessionStorage.setItem("nocheck", nonchecked);
 
    score=0;
  
@@ -111,29 +114,7 @@ for(i=0;i<questions.length;i++)
     for( let j=0;j<3;j++)
     {
 
-
-      //Question 1
-      if (i==0)
-        { 
-           for(let k=0;k<3;k++)
-           {
-            if (choix[k].checked)
-            {
-                compteurcheck++;
-            }
-           }
-           if(compteurcheck == 2 && !choix[1].checked) {
-               score+=2; break; }
-               else if (compteurcheck == 0)
-               {
-                   break;
-               }
-            else score+=-1;
-            break;
-    }
-
-    //pour Q2
-    else if(i==1)
+ if(i==1)
         {
             if(choix[j].checked)
             {
@@ -165,8 +146,11 @@ for(i=0;i<questions.length;i++)
 }
 
 }
+sessionStorage.setItem("points", score);
 alert("SCORE : "+score + "Rnp" +nonchecked);
 displaybuttons();
+location.href="first_level.html"
+
 
 }
 

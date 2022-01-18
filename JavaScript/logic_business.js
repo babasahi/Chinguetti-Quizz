@@ -2,11 +2,11 @@
 let input = document.getElementsByTagName('input');
 const form = document.getElementById('form');
 
+
+
 let compteur = 0;
 let score=0;
-let vrai = 0;
 let nonchecked = 7;
-let check = 0;
 let Totale = 7 ;
 
 sessionStorage.setItem("TotalQeustion", Totale);
@@ -107,13 +107,14 @@ do
 answer = prompt("What question has no answer",'between 1 and 7');
 while(isNaN(answer) || ( answer > 4) || (answer < 1));
 if(answer == 2) {score+=2;
-alert(" Score:"+score + "\n" + "tq" + Totale + "\n" + "QR"+check + "\n" + "noncked"+Totale );
+    alert( "Your Nom : " +document.getElementById("nom").value + "\n" + "SCORE : "+score + "\n" + " Total Questions : "
+    + "\n" + "Unanswered questions" +nonchecked + "\n"  );
 }
 else {
-alert(" Score: "+score );
+    alert( "Your Nom : " +document.getElementById("nom").value + "\n" + "SCORE : "+score + "\n" + " Total Questions : "
+    + "\n" + "Unanswered questions" +nonchecked + "\n"  );
 }
-sessionStorage.setItem("points", score);
-sessionStorage.setItem("nocheck", nonchecked);
+
 displaybuttons();
 return ;
 }
@@ -132,8 +133,7 @@ nonchecked-=2;
 if(compteur > 18 && compteur<21)
 nonchecked-=1;
 
-sessionStorage.setItem("nocheck", nonchecked);
-check = Totale-nonchecked ;
+
 
 score=0;
 
@@ -203,8 +203,9 @@ else score+=0;
 }
 
 }
-sessionStorage.setItem("points", score);
-alert("Score : "+score + "Unanswered questions" +nonchecked);
+
+alert( "Your Nom : " +document.getElementById("nom").value + "\n" + "SCORE : "+score + "\n" + " Total Questions : "
++ "\n" + "Unanswered questions" +nonchecked + "\n"  );
 displaybuttons();
 
 }
