@@ -12,9 +12,7 @@
 }
 body {
   font-family: "Lato";
-  background: url(./assets/images/90.jpg) no-repeat;
   background-color: white;
-  background: #000;
 }
 header {
   background-color: #06d6a0;
@@ -56,11 +54,11 @@ ul li a:hover {
 }
 
 .welcome_text {
-  width: 700px;
+  width: 400px;
   color: black;
   margin-top: 10%;
   background: #341f97;
-  margin-left: 25%;
+  margin-left: 30%;
 }
 
 .welcome_form input,
@@ -71,12 +69,10 @@ ul li a:hover {
 }
 
 .welcome_form input {
-  background-color: transparent;
-  color: black;
+  background-color: black;
   font-size: 30px;
   text-align: center;
   border: none;
-  border-bottom: 1px solid #fff;
   margin-bottom: 17px;
 }
 
