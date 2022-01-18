@@ -246,6 +246,7 @@ img {
   align-items: center;
   border: none;
   border-radius: 12px;
+  font-weight: bold;
   background-color: #ffb703;
   margin: 10px 0;
   padding-left: 10px;
@@ -345,7 +346,7 @@ img {
   align-items: center;
   justify-content: center;
   height: 100%;
-  width: 100px;
+  width: 140px;
   color: black;
   font-size: 28px;
   font-family: "Alfa Slab One";
