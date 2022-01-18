@@ -241,11 +241,12 @@ img {
 }
 .box label {
   display: flex;
-  height: 53px;
+  height: 50px;
   width: 100%;
   align-items: center;
-  border: 1px solid lightgrey;
-  border-radius: 50px;
+  border: none;
+  border-radius: 12px;
+  background-color: #ffb703;
   margin: 10px 0;
   padding-left: 10px;
   cursor: default;
@@ -263,8 +264,8 @@ img {
 #option-1111:checked ~ .option-1111,
 #option-2222:checked ~ .option-2222,
 #option-3333:checked ~ .option-3333 {
-  background: #333;
-  border-color: #333;
+  background: #5f84fe;
+  border-color: #5f84fe;
 }
 .box label .dot {
   height: 20px;
@@ -310,7 +311,7 @@ img {
 #option-1111:checked ~ .option-1111 .dot::before,
 #option-2222:checked ~ .option-2222 .dot::before,
 #option-3333:checked ~ .option-3333 .dot::before {
-  background: #333;
+  background: #5f84fe;
   transform: translate(-50%, -50%) scale(1);
 }
 .box label .text {
