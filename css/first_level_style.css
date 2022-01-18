@@ -393,11 +393,10 @@ button.passbtn:hover {
 
 footer {
   background-color: #06d6a0;
-  padding: 16px;
   font-family: "Rakkas";
   font-size: 20px;
   color: black;
   margin-top: 5%;
-  padding-left: 40%;
   align-items: center;
+  justify-content: center;
 }
