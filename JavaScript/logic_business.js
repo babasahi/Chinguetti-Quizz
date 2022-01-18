@@ -206,6 +206,5 @@ else score+=0;
 sessionStorage.setItem("points", score);
 alert("SCORE : "+score + "Rnp" +nonchecked);
 displaybuttons();
-location.href="end.html"
 
 }

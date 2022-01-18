@@ -402,7 +402,8 @@ footer {
   font-family: "Rakkas";
   font-size: 20px;
   color: black;
-  margin-top: 5%;
+  margin-top: 10%;
   align-items: center;
   justify-content: center;
+  height: 90px;
 }
