@@ -77,7 +77,7 @@ for ( let i= 0 ;i<input.length;i++)
 if(compteur == 12)
 {       let answer;
     do
-    answer = prompt("Quelle question n'a aucune reponse",'entre 1 et 4 ');
+    answer = prompt("Which question left unanswered",'between 1 and 4 ');
      while(isNaN(answer) || ( answer > 4) || (answer < 1));
     if(answer == 2) {score+=2;
         alert("Go to to results page" );
