@@ -36,6 +36,7 @@ div {
   border-radius: 10px;
   display: flex;
   flex-direction: column;
+  font-weight: bold;
 }
 .title {
   font-family: "Righteous";
@@ -55,35 +56,32 @@ div {
   display: flex;
   height: 150px;
   width: 400px;
-  padding: 10px 20px;
-  border-radius: 25% ;
   transition: padding-left 0.5s, padding-right 0.5s;
 }
 .tyr-btn {
-  margin-top: 25px;
   border: none;
-  background:  #f9e5b6;
+  background: #06d6a0;
   width: 100px;
   font-family: "Unica One";
   font-size: 25px;
-  padding: 10px;
+  padding: 10px 5px;
   filter: grayscale(50%);
   transition: filter 0.3s;
-  margin-left: 10px;
-  margin-top: 30px;
+  margin-right: 230px;
+  margin-top: 40%;
 }
 .Quite-btn  {
   margin-top: 25px;
   border: none;
-  background: #edc371;
+  background: #06d6a0;
   width: 100px;
   font-family: "Unica One";
   font-size: 25px;
-  padding: 5px;
+  padding: 10px 5px;
   filter: grayscale(50%);
   transition: filter 0.3s;
-  margin-left: 280px;
-  margin-top: -37px;
+  margin-left: 250px;
+  margin-top: -50px;
 }
 
 button:hover {
