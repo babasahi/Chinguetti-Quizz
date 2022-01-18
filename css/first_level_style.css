@@ -60,7 +60,7 @@ ul li a:hover {
   width: 580px;
   padding: 20px;
   background: #06d6a0;
-  border-radius: 30px 10px;
+  border-radius: 10px;
   border: none;
   justify-content: center;
   align-items: center;
@@ -128,7 +128,6 @@ label {
 }
 
 .panel {
-  background: rgba(0, 0, 0, 0.2);
   background-color: #06d6a0;
 }
 .panel-heading {
@@ -178,7 +177,7 @@ label {
 .continue .back:last-child {
   margin: 10px 0;
 }
-.continue,
+
 .back:hover,
 #clear:hover {
   background: #e91e3a;
@@ -341,7 +340,7 @@ button.corigbtn:hover {
   transition: all 0.3s ease;
 }
 
-  button.passbtn {
+button.passbtn {
   margin-left: 70px;
   border: none;
   background: #edc371;
