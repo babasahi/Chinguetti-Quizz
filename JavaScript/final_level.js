@@ -88,14 +88,15 @@ if(compteur == 12)
      sessionStorage.setItem("points", score);
      sessionStorage.setItem("nocheck", nonchecked);
      displaybuttons();
-     location.href="first_level.html"
+     location.href="results.html"
      return ;
 }
-  if(compteur >3 && compteur<=6)
+
+  else if((compteur >=3 && compteur<=6))
    nonchecked-=3;
-   if(compteur >6 && compteur<=9) 
+   else if((compteur >6 && compteur<=9) )
    nonchecked-=2;
-   if(compteur > 9 && compteur<12)
+   else if((compteur > 9 && compteur<12))
    nonchecked-=1;
    
    sessionStorage.setItem("nocheck", nonchecked);
@@ -149,7 +150,7 @@ for(i=0;i<questions.length;i++)
 sessionStorage.setItem("points", score);
 alert("SCORE : "+score + "Rnp" +nonchecked);
 displaybuttons();
-location.href="first_level.html"
+location.href="results.html"
 
 
 }

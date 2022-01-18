@@ -6,7 +6,6 @@ const form = document.getElementById('form');
 
 let compteur = 0;
 let score=0;
-let nonchecked = 7;
 let Totale = 7 ;
 
 sessionStorage.setItem("TotalQeustion", Totale);
@@ -92,6 +91,8 @@ let questions = [
 
 function result(){
 
+    let nonchecked = 7;
+
 for ( let i= 0 ;i<input.length;i++)
 {
 if(input[i].type == 'radio' && !input[i].checked)
@@ -101,37 +102,36 @@ if(input[i].type == 'radio' && !input[i].checked)
 
 }
 
+
 if(compteur == 21)
 {       let answer;
 do
 answer = prompt("What question has no answer",'between 1 and 7');
-while(isNaN(answer) || ( answer > 4) || (answer < 1));
+while(isNaN(answer) || ( answer > 8) || (answer < 1));
 if(answer == 2) {score+=2;
-    alert( "Your Nom : " +document.getElementById("nom").value + "\n" + "SCORE : "+score + "\n" + " Total Questions : "
-    + "\n" + "Unanswered questions" +nonchecked + "\n"  );
+    alert(  "Score : "+score + "\n" + "Total Questions : " +Totale
+    + "\n" + "Unanswered questions : " +Totale+ "\n"  );
 }
 else {
-    alert( "Your Nom : " +document.getElementById("nom").value + "\n" + "Score : "+score + "\n" + " Total Questions : "
-    + "\n" + "Unanswered questions :" +nonchecked + "\n"  );
+         score-=1 ;
+    alert( "Score : "+score + "\n" + "Total Questions : "+Totale
+    + "\n" + "Unanswered questions : " +Totale + "\n"  );
 }
-
 displaybuttons();
 return ;
-}
 
-
-if(compteur >3 && compteur<=6)
-nonchecked-=6;
-if(compteur >6 && compteur<=9) 
+else if((compteur >=3 && compteur<=6))
 nonchecked-=5;
-if(compteur > 9 && compteur<=12)
+else if((compteur > 6 && compteur<=9) )
 nonchecked-=4;
-if(compteur > 12 && compteur<=15)
+else if((compteur > 9 && compteur<=12))
 nonchecked-=3;
-if(compteur > 15 && compteur<=18)
+else if((compteur > 12 && compteur<=15))
 nonchecked-=2;
-if(compteur > 18 && compteur<21)
+if((compteur > 15 && compteur<=18))
 nonchecked-=1;
+
+}
 
 
 
@@ -143,7 +143,7 @@ for(i=0;i<questions.length;i++)
 let choix = questions[i].choix;
 
 let reponse = questions[i].reponse;
-let bi = 0 ;
+let v = 0 ;
 let compteurcheck = 0;
 
 for( let j=0;j<3;j++)
@@ -179,10 +179,10 @@ else if(i==1)
         break;
     }
     else {
-        bi ++;
+        v++;
     }
 
-    if (bi == 3 && j==2)
+    if (v == 3 && j==2)
     {
         score+=2;
         break;
@@ -204,8 +204,8 @@ else score+=0;
 
 }
 
-alert( "Your Nom : " +document.getElementById("nom").value + "\n" + "SCORE : "+score + "\n" + " Total Questions : "
-+ "\n" + "Unanswered questions" +nonchecked + "\n"  );
+alert( "Score : "+score + "\n" + "Total Questions : "+Totale
++ "\n" + "Unanswered questions :" +nonchecked  );
 displaybuttons();
 
 }
