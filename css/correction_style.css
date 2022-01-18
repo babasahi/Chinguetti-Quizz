@@ -1,0 +1,36 @@
+.title {
+  font-size: 34px;
+  font-family: "Acme";
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 40%;
+}
+.boxy1 {
+  position: relative;
+  width: 700px;
+  left: 20%;
+
+  border: 4px solid black;
+
+  margin-left: 20px;
+  font-size: 22px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+p {
+  font-size: 22;
+  font-family: bold;
+  font-family: "Acme";
+}
+span {
+  font-size: 26px;
+  color: black;
+  font-weight: Bold;
+  font-family: "Rakkas";
+}
+.correct {
+  color: green;
+  font-family: "Acme";
+  font-weight: bolder;
+}
