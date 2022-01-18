@@ -82,9 +82,13 @@ p {
   position: relative;
   width: 64%;
   height: 100%;
+  margin-top: 140px;
   float: right;
 }
-
+span {
+  font-weight: bold;
+  font-size: 24px;
+}
 .about h3 {
   padding-top: 110px;
 }
