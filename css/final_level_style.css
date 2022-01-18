@@ -57,6 +57,7 @@ ul li a:hover {
   width: 100%;
   max-width: 650px;
   margin: 0 auto;
+  background-color: #fff;
 }
 
 label {
@@ -68,10 +69,14 @@ label {
 }
 
 .panel {
-  background: rgba(0, 0, 0, 0.2);
+  background: #fff
 }
 .panel-heading {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  font-family: "Acme";
+  font-size: 20px;
+
 }
 
 .btn-group {
@@ -236,7 +241,7 @@ img {
 
 .box {
   padding: 10px 20px;
-  background: white;
+  background: #fff;
   border-radius: 12px;
 }
 .box label {
@@ -271,7 +276,7 @@ img {
 .box label .dot {
   height: 20px;
   width: 20px;
-  background: #d9d9d9;
+  background: #fff;
   border-radius: 50%;
   position: relative;
   transition: all 0.3s ease;
@@ -281,7 +286,8 @@ img {
 #option-3:checked ~ .option-3 .dot,
 #option-11:checked ~ .option-11 .dot,
 #option-22:checked ~ .option-22 .dot,
-#option-33:checked ~ .option-33 .dot #option-111:checked ~ .option-111 .dot,
+#option-33:checked ~ .option-33 .dot 
+#option-111:checked ~ .option-111 .dot,
 #option-222:checked ~ .option-222 .dot,
 #option-333:checked ~ .option-333 .dot,
 #option-1111:checked ~ .option-1111 .dot,
@@ -322,6 +328,10 @@ img {
   padding-left: 10px;
   transition: color 0.3s ease;
   font-weight:bold;
+  font-weight: bold;
+  font-family: "Acme";
+  font-size: 20px;
+  margin-right: 60%;
 }
 #option-1:checked ~ .option-1 .text,
 #option-2:checked ~ .option-2 .text,
@@ -336,6 +346,7 @@ img {
 #option-2222:checked ~ .option-2222 .text,
 #option-3333:checked ~ .option-3333 .text {
   color: #fff;
+
 }
 
 .box input[type="radio"] {
