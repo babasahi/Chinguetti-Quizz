@@ -15,10 +15,11 @@
 body {
   font-family: "Poppins", sans-serif;
   color: #000;
- background: url(../assets/images/0bd6ce07-f521-4eaf-b363-77d07a80acc9.jfif) no-repeat;
- background-position: left;
- background-color: white;
- background-size: 520px;
+  background: url(../assets/images/0bd6ce07-f521-4eaf-b363-77d07a80acc9.jfif)
+    no-repeat;
+  background-position: left;
+  background-color: white;
+  background-size: 520px;
 }
 
 header {
@@ -73,65 +74,56 @@ p {
   padding-bottom: 20px;
 }
 
-
 #center_content {
   padding-left: 60px;
 }
 
 .main_content {
-position: relative;
-width: 64%;
-height: 100%;
-Float: right
-
+  position: relative;
+  width: 64%;
+  height: 100%;
+  float: right;
 }
 
-
 .about h3 {
-padding-top: 110px;
+  padding-top: 110px;
 }
 
 .about div {
-height: 100%;
-width: 90%;
-border-radius:0.5em;
-background-color: #fff;
+  height: 100%;
+  width: 90%;
+  border-radius: 0.5em;
+  background-color: #fff;
 }
 
 .about div p {
-font-size: 20px;
-margin: 20px 20px 20px 20px;
+  font-size: 20px;
+  margin: 20px 20px 20px 20px;
 }
 
-
-
-
 .contact ul {
-height: 100%;
-width: 30%;
-border-radius:0.5em;
-background-color: #fff;
- padding-bottom: 5px;
-
+  height: 100%;
+  width: 30%;
+  border-radius: 0.5em;
+  background-color: #fff;
+  padding-bottom: 5px;
 }
 
 .contact ul li {
-font-size: 20px;
-margin: 20px 20px 20px 20px;
-
+  font-size: 20px;
+  margin: 20px 20px 20px 20px;
 }
 .contact ul li:first-child {
-    padding-top: 20px;
+  padding-top: 20px;
 }
 
 textarea {
-     color: #000;
-     background-color: transparent;
-     border: 1px solid #30E3CA;
-     font-size: 20px;
-     padding-top: 5px;
-     padding-left: 8px;
-
+  color: #000;
+  background-color: transparent;
+  border: 1px solid #30e3ca;
+  font-size: 20px;
+  padding-top: 5px;
+  padding-left: 8px;
 }
 
 input {
@@ -143,7 +135,6 @@ input {
   font-size: 15px;
 }
 
-
 footer {
   background-color: #06d6a0;
   font-family: "Rakkas";
@@ -151,15 +142,5 @@ footer {
   color: black;
   margin-top: 65%;
   height: 90px;
-  text-align: center; 
+  text-align: center;
 }
-
-
-
-
-
-
-
-
-
-
