@@ -7,9 +7,9 @@ const form = document.getElementById('form');
 let compteur = 0;
 let score=0;
 let Totale = 7 ;
-let nonchecked = 7 ;
+var nonchecked =7;
 
-sessionStorage.setItem("TotalQeustion", Totale);
+
 
 function reload()
 {
@@ -92,7 +92,7 @@ let questions = [
 
       function result(){
 
-    let nonchecked = 7;
+
 
 for ( let i= 0 ;i<input.length;i++)
 {
@@ -120,18 +120,8 @@ else {
 }
 displaybuttons();
 return ;
-}
 
- if((compteur >=3 && compteur<=6))
-nonchecked-=5;
-else if((compteur >6 && compteur<=9) )
-nonchecked-=4;
-else if((compteur > 9 && compteur<12))
-nonchecked-=3;
-else if((compteur > 12 && compteur<=15))
-nonchecked-=2;
-else if((compteur > 15 && compteur<=18))
-nonchecked-=1;
+}
 
 
 score=0;
@@ -206,10 +196,6 @@ else score+=0;
 alert( "Score : "+score + "\n" + "Total Questions : "+Totale
 + "\n" + "Unanswered questions :" +nonchecked  );
 displaybuttons();
-
-
-
-
 
 
 
