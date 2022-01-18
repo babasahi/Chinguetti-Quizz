@@ -64,6 +64,20 @@ let questions = [
 
 
 function result(){
+    if ((Q[0].checked || Q[1].checked  || Q[2].checked == true)) {
+        nonchecked --;  
+    }
+    if ((Q1[0].checked || Q1[1].checked  || Q1[2].checked == true)) {
+     nonchecked --;  
+    }
+    if ((Q2[0].checked || Q2[1].checked  || Q2[2].checked == true)) {
+     nonchecked --;  
+    }
+    if ((Q3[0].checked || Q3[1].checked  || Q3[2].checked == true)) {
+     nonchecked --;  
+    }
+    sessionStorage.setItem("nocheck", nonchecked);
+    
 
 for ( let i= 0 ;i<input.length;i++)
 {
@@ -93,14 +107,6 @@ if(compteur == 12)
      return ;
 }
 
-  else if((compteur >=3 && compteur<=6))
-   nonchecked-=3;
-   else if((compteur >6 && compteur<=9) )
-   nonchecked-=2;
-   else if((compteur > 9 && compteur<12))
-   nonchecked-=1;
-   
-   sessionStorage.setItem("nocheck", nonchecked);
 
    score=0;
  
@@ -149,7 +155,7 @@ for(i=0;i<questions.length;i++)
 
 }
 sessionStorage.setItem("points", score);
-alert("SCORE : "+score + "Rnp" +nonchecked);
+alert("Go to results page");
 displaybuttons();
 location.href="results.html"
 

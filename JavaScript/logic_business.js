@@ -90,12 +90,10 @@ let questions = [
 
       function result(){
 
-
-        
 if ((Q[0].checked || Q[1].checked  || Q[2].checked == true)) {
     nonchecked --;  
 }
-if ((Q1[0].checked || Q1[1].checked  || Q2[2].checked == true)) {
+if ((Q1[0].checked || Q1[1].checked  || Q1[2].checked == true)) {
  nonchecked --;  
 }
 if ((Q2[0].checked || Q2[1].checked  || Q2[2].checked == true)) {
