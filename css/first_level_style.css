@@ -341,7 +341,7 @@ button.corigbtn:hover {
   transition: all 0.3s ease;
 }
 
-button.passbtn {
+  button.passbtn {
   margin-left: 70px;
   border: none;
   background: #edc371;

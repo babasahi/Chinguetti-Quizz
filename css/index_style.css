@@ -145,12 +145,7 @@ ul li a:hover {
 .banner .right {
   width: 380px;
 }
-footer {
-  background-color: rgba(43, 41, 41, 0.692);
-  height: 145px;
-  font-size: 20px;
-  margin-top: 25%;
-}
+
 
 #particles-js {
   width: 100%;
@@ -162,11 +157,15 @@ footer {
 
 footer {
   background-color: #06d6a0;
-  padding: 16px;
   font-family: "Rakkas";
   font-size: 20px;
   color: black;
-  margin-top: 28%;
+  margin-top: 40%;
   padding-left: 40%;
   align-items: center;
+  height: 100px;
+
+
+ 
 }
+
