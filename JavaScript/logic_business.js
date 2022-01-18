@@ -7,7 +7,8 @@ const form = document.getElementById('form');
 let compteur = 0;
 let score=0;
 let Totale = 7 ;
-var nonchecked =7;
+let nonchecked = 7 ;
+
 
 
 
@@ -54,7 +55,6 @@ let Q6=document.getElementsByName('Q7');
 
 
 
-
 let questions = [ 
 {
 "choix" : Q,
@@ -66,11 +66,11 @@ let questions = [
 },
 {
 "choix" : Q2,
-"reponse" : 0
+"reponse" : 2
 },
 {
 "choix" : Q3,
-"reponse" : 0
+"reponse" : 1
 },
 {
 "choix" : Q4,
@@ -82,28 +82,47 @@ let questions = [
  },
  {
   "choix" : Q6,
-   "reponse" : 0
+   "reponse" : 1
  }
 
 ];
-
-
-
+ 
 
       function result(){
 
+
+        
+if ((Q[0].checked || Q[1].checked  || Q[2].checked == true)) {
+    nonchecked --;  
+}
+if ((Q1[0].checked || Q1[1].checked  || Q2[2].checked == true)) {
+ nonchecked --;  
+}
+if ((Q2[0].checked || Q2[1].checked  || Q2[2].checked == true)) {
+ nonchecked --;  
+}
+if ((Q3[0].checked || Q3[1].checked  || Q3[2].checked == true)) {
+ nonchecked --;  
+}
+if ((Q4[0].checked || Q4[1].checked  || Q4[2].checked == true)) {
+ nonchecked --;  
+}
+if ((Q5[0].checked || Q5[1].checked  || Q5[2].checked == true)) {
+ nonchecked --;  
+}
+if ((Q6[0].checked || Q6[1].checked  || Q6[2].checked == true)) {
+ nonchecked --;  
+}
 
 
 for ( let i= 0 ;i<input.length;i++)
 {
 if(input[i].type == 'radio' && !input[i].checked)
 {   compteur++;
-
+    
 }
 
 }
-
-
 if(compteur == 21)
 {       let answer;
 do
@@ -123,11 +142,12 @@ return ;
 
 }
 
-
 score=0;
 
 for(i=0;i<questions.length;i++)
 {
+
+  
 
 let choix = questions[i].choix;
 
@@ -193,10 +213,10 @@ else score+=0;
 
 }
 
+
+
 alert( "Score : "+score + "\n" + "Total Questions : "+Totale
 + "\n" + "Unanswered questions :" +nonchecked  );
 displaybuttons();
-
-
 
 }
