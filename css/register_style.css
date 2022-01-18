@@ -53,39 +53,40 @@ ul li a:hover {
   color: blue;
 }
 
-.welcome_text {
+.welcome {
   width: 400px;
-  color: black;
   margin-top: 10%;
   margin-left: 36%;
 }
 
-.welcome_form input,
-.welcome_form button {
-  display: block;
-  width: 100%;
-  background-color: #341f97;
-}
-
 .welcome_form input {
-  background-color: black;
+  color: black;
   font-size: 30px;
   text-align: center;
-  border: none;
+  border: 2px solid black;
+  padding: 8px;
+  border-radius: 8px;
   margin-bottom: 17px;
 }
-
+.welcome_form label {
+  font-size: 26px;
+  font-family: "Acme";
+}
 .welcome_form input:focus {
   outline: none;
 }
 
 .welcome_form button {
-  padding: 20px 0;
   border: none;
-  border-radius: 100px;
-  background-color: #fff;
-  color: #341f97;
-  font-size: 22px;
+  display: block;
+  width: 96%;
+  font-family: "Acme";
+  padding: 12px;
+  font-weight: bold;
+  border-radius: 12px;
+  background-color: #06d6a0;
+  color: black;
+  font-size: 26px;
   transition: 0.4s all;
 }
 
