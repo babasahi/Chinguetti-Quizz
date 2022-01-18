@@ -16,10 +16,11 @@ body {
   font-family: "Poppins", sans-serif;
   color: #000;
   background: url(../assets/images/0bd6ce07-f521-4eaf-b363-77d07a80acc9.jfif)
-    no-repeat;
+    no-repeat ;
   background-position: left;
   background-color: white;
-  background-size: 520px;
+  background-size: 530px;
+ 
 }
 
 header {
@@ -140,7 +141,7 @@ footer {
   font-family: "Rakkas";
   font-size: 20px;
   color: black;
-  margin-top: 70%;
+  margin-top: 67%;
   height: 90px;
   text-align: center;
 }
