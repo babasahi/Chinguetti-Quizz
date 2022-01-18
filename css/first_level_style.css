@@ -314,14 +314,16 @@ button.corigbtn {
   height: 50px;
   width: 120px;
   margin: 10px 25px;
-  border: none;
+  border: 2px solid black;
   outline: none;
-  border: 1px solid #b0c4d8;
+
   border-radius: 20px 5px;
   font-size: 18px;
+  font-weight: bold;
+  font-family: "Acme";
   cursor: pointer;
-  background: green;
-  color: #fff;
+  background: #70e000;
+  color: black;
 }
 button.startbtn {
   margin-right: 70%px;
