@@ -134,6 +134,9 @@ label {
 .panel-heading {
   margin-bottom: 20px;
   background-color: #06d6a0;
+  font-size: 24px;
+  font-family: "Secular One";
+  font-weight: bold;
 }
 
 .btn-group {
@@ -147,7 +150,7 @@ label {
   border: none;
   outline: none;
   color: #e7f1fa;
-  background: #ff5235;
+  background: #524eee;
   border: 1px solid #b0c4d8;
   border-radius: 20px 5px;
   font-size: 18px;
@@ -157,28 +160,30 @@ label {
 #clear {
   border: none;
   outline: none;
-  color: #e7f1fa;
-  background: #ff5235;
-  font-size: 18px;
+  color: black;
+  background: #524eee;
+  font-size: 22px;
+  font-weight: bold;
+  font-family: "Acme";
   cursor: pointer;
 }
 
 .continue {
-  height: 38px;
-  width: 100px;
+  height: 50px;
+  width: 120px;
+  background-color: #524eee;
   color: black;
   border: 2px solid black;
-  border-radius: 8px;
-  background-color: #06d6a0;
-  font-size: 18px;
+  border-radius: 20px 5px;
+  font-size: 22px;
   font-weight: bold;
+  font-family: "Acme";
   cursor: pointer;
   margin-left: 70%;
 }
 .continue .back:last-child {
   margin: 10px 0;
 }
-.continue,
 .back:hover,
 #clear:hover {
   background: #e91e3a;
@@ -341,7 +346,7 @@ button.corigbtn:hover {
   transition: all 0.3s ease;
 }
 
-  button.passbtn {
+button.passbtn {
   margin-left: 70px;
   border: none;
   background: #edc371;
@@ -394,11 +399,10 @@ button.passbtn:hover {
 
 footer {
   background-color: #06d6a0;
-  padding: 16px;
   font-family: "Rakkas";
   font-size: 20px;
   color: black;
   margin-top: 5%;
-  padding-left: 40%;
   align-items: center;
+  justify-content: center;
 }
