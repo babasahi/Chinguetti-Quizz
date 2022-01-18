@@ -80,10 +80,11 @@ if(compteur == 12)
     answer = prompt("Quelle question n'a aucune reponse",'entre 1 et 4 ');
      while(isNaN(answer) || ( answer > 4) || (answer < 1));
     if(answer == 2) {score+=2;
-        alert(" Score:"+score + "\n" + "tq" + Totale + "\n" + "QR"+check + "\n" + "noncked"+nonchecked );
+        alert("FUCK YOU GO TO YOUR RSULTS " );
      }
      else {
-        alert(" Score: "+score );
+        alert(" FUCK YOU GO TO YOUR RSULTS ");
+        location.href="results.html"
      }
      sessionStorage.setItem("points", score);
      sessionStorage.setItem("nocheck", nonchecked);
@@ -109,7 +110,7 @@ for(i=0;i<questions.length;i++)
     let choix = questions[i].choix;
 
     let reponse = questions[i].reponse;
-    let bi = 0 ;
+    let v = 0 ;
     let compteurcheck = 0;
 
     for( let j=0;j<3;j++)
@@ -123,10 +124,10 @@ for(i=0;i<questions.length;i++)
                 break;
             }
             else {
-                bi ++;
+                v ++;
             }
 
-            if (bi == 3 && j==2)
+            if (v == 3 && j==2)
             {
                 score+=2;
                 break;
