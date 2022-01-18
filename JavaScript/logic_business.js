@@ -111,8 +111,8 @@ if(answer == 2) {score+=2;
     + "\n" + "Unanswered questions" +nonchecked + "\n"  );
 }
 else {
-    alert( "Your Nom : " +document.getElementById("nom").value + "\n" + "SCORE : "+score + "\n" + " Total Questions : "
-    + "\n" + "Unanswered questions" +nonchecked + "\n"  );
+    alert( "Your Nom : " +document.getElementById("nom").value + "\n" + "Score : "+score + "\n" + " Total Questions : "
+    + "\n" + "Unanswered questions :" +nonchecked + "\n"  );
 }
 
 displaybuttons();
