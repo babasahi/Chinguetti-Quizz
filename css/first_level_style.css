@@ -398,7 +398,8 @@ button.passbtn:hover {
 .quiz_user {
   display: flex;
   align-items: center;
-  height: 100%;
+  font-size: 18px;
+  font-family: "Pacifico";
   padding-left: 30px;
 }
 
