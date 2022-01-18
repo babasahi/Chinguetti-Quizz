@@ -9,50 +9,11 @@
 body {
   font-family: "Roboto", sans-serif;
   text-align: center;
-
   background: white;
   background-position: center;
   background-size: cover;
 }
-header {
-  background-color: #06d6a0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.logo {
-  color: blue;
-  font-size: 58px;
-  font-weight: 100;
-  margin-left: 18px;
-  letter-spacing: 10;
-  font-family: "Rakkas";
-  cursor: pointer;
-}
 
-ul {
-  list-style: none;
-}
-ul li {
-  display: inline-block;
-  margin-left: 8px;
-  margin-right: 22px;
-}
-
-ul li a {
-  font-size: 28px;
-  color: black;
-  text-decoration: none;
-  letter-spacing: 1px;
-  font-family: "Acme";
-  font-weight: 600;
-  transition: 0.3s;
-}
-
-ul li a:hover {
-  color: blue;
-  text-decoration: underline;
-}
 
 .form-container {
   margin-top: -1%;
