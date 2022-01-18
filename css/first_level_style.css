@@ -135,7 +135,7 @@ label {
   margin-bottom: 20px;
   background-color: #06d6a0;
   font-size: 24px;
-  font-family: "Secular One";
+  font-family: "Georgia";
   font-weight: bold;
 }
 
@@ -149,18 +149,22 @@ label {
   margin: 10px 25px;
   border: none;
   outline: none;
-  color: #e7f1fa;
+  color: black;
   background: #524eee;
-  border: 1px solid #b0c4d8;
+  font-size: 22px;
+  border: 2px solid black;
+  font-weight: bold;
+  font-family: "Acme";
   border-radius: 20px 5px;
-  font-size: 18px;
+  font-size: 22px;
+  font-weight: bold;
   cursor: pointer;
   margin-right: 70%;
 }
 #clear {
-  border: none;
   outline: none;
   color: black;
+  border: none;
   background: #524eee;
   font-size: 22px;
   font-weight: bold;
@@ -291,15 +295,16 @@ button.validebtn {
   height: 50px;
   width: 120px;
   margin: 10px 25px;
-  border: none;
+  border: 2px solid black;
   outline: none;
-  border: 1px solid #b0c4d8;
+
   border-radius: 20px 5px;
-  font-size: 18px;
+  font-size: 22px;
+  font-weight: bold;
   cursor: pointer;
   margin-left: 70%;
-  background: green;
-  color: #fff;
+  background: #70e000;
+  color: black;
 }
 button.validebtn:hover {
   background: #5f84fe;
@@ -309,14 +314,16 @@ button.corigbtn {
   height: 50px;
   width: 120px;
   margin: 10px 25px;
-  border: none;
+  border: 2px solid black;
   outline: none;
-  border: 1px solid #b0c4d8;
+
   border-radius: 20px 5px;
   font-size: 18px;
+  font-weight: bold;
+  font-family: "Acme";
   cursor: pointer;
-  background: green;
-  color: #fff;
+  background: #70e000;
+  color: black;
 }
 button.startbtn {
   margin-right: 70%px;
@@ -348,16 +355,16 @@ button.corigbtn:hover {
 
 button.passbtn {
   margin-left: 70px;
+  padding: 8px;
   border: none;
-  background: #edc371;
-  padding: 20px;
-  width: 25%;
+  width: 45%;
   background: black;
-  color: #fff;
-  font-size: 1rem;
+  color: white;
+  font-size: 24px;
   margin: 7px 3px;
   cursor: pointer;
   outline: none;
+  font-family: "Acme";
   margin-bottom: 10px;
   transition: background 0.3s ease-in-out;
   box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.3);
@@ -393,7 +400,8 @@ button.passbtn:hover {
 .quiz_user {
   display: flex;
   align-items: center;
-  height: 100%;
+  font-size: 18px;
+  font-family: "Pacifico";
   padding-left: 30px;
 }
 
