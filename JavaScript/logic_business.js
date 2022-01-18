@@ -7,6 +7,7 @@ const form = document.getElementById('form');
 let compteur = 0;
 let score=0;
 let Totale = 7 ;
+let nonchecked = 7 ;
 
 sessionStorage.setItem("TotalQeustion", Totale);
 
@@ -119,20 +120,18 @@ else {
 }
 displaybuttons();
 return ;
+}
 
 else if((compteur >=3 && compteur<=6))
 nonchecked-=5;
-else if((compteur > 6 && compteur<=9) )
+else if((compteur >6 && compteur<=9) )
 nonchecked-=4;
-else if((compteur > 9 && compteur<=12))
+else if((compteur > 9 && compteur<12))
 nonchecked-=3;
 else if((compteur > 12 && compteur<=15))
 nonchecked-=2;
-if((compteur > 15 && compteur<=18))
+else if((compteur > 15 && compteur<=18))
 nonchecked-=1;
-
-}
-
 
 
 score=0;
