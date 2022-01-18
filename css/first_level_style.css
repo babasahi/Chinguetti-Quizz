@@ -14,7 +14,6 @@ body {
   background-size: cover;
 }
 
-
 .form-container {
   margin-top: -1%;
   height: auto;
@@ -361,9 +360,8 @@ button.passbtn:hover {
 .quiz_user {
   display: flex;
   align-items: center;
-  font-size: 18px;
-  font-family: "Pacifico";
+  font-size: 22px;
+  font-family: "Lobster";
+
   padding-left: 30px;
 }
-
-
