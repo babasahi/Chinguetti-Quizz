@@ -334,20 +334,23 @@ img {
 #option-3333:checked ~ .option-3333 .text {
   color: #fff;
 }
+
 .box input[type="radio"] {
   display: none;
 }
+
 #time {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100%;
   width: 100px;
-  background-color: #341f97;
-  color: #fff;
+  color: black;
+  font-size: 28px;
+  font-weight: bolder;
+  border: 2px solid black;
+  margin-top: 12px;
   margin-left: 42%;
-  border-radius: 50%;
-  padding: 15px 30px;
+  border-radius: 8px;
+  padding: 12px;
 }
-
-
