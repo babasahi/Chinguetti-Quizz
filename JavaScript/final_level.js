@@ -97,6 +97,7 @@ if(compteur == 12)
         alert("Go to to results page" );
      }
      else {
+         score-=1;
         alert("Go to to results page");
         location.href="results.html"
      }

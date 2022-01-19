@@ -4,6 +4,8 @@ const form = document.getElementById('form');
 
 
 
+
+
 let compteur = 0;
 let score=0;
 let Totale = 7 ;
